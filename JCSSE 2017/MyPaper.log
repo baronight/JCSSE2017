@@ -1,0 +1,1550 @@
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210) (preloaded format=xelatex 2017.3.5)  15 MAR 2017 14:56
+entering extended mode
+**./MyPaper.tex
+(MyPaper.tex
+LaTeX2e <2017/01/01> patch level 1
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+(IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for TU+ptm on input line 503.
+LaTeX Font Info:    No file TUptm.fd. on input line 503.
+
+LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 503.
+
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+\@IEEEnormalsizeunitybaselineskip=\dimen105
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
+
+LaTeX Font Warning: Font shape `TU/ptm/bx/n' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 1090.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 1090.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 1090.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\IEEEPARstartletwidth=\dimen125
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+) ("D:\MiKTeX 2.9\tex\latex\xltxtra\xltxtra.sty"
+Package: xltxtra 2016/01/21 v0.6 Improvements for the "XeLaTeX" format
+
+("D:\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("D:\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("D:\MiKTeX 2.9\tex\latex\fontspec\fontspec.sty"
+("D:\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
+Package: expl3 2017/02/10 v6878 L3 programming layer (loader) 
+
+("D:\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
+Package: expl3 2017/02/10 v6878 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/12/28 v6805 L3 Bootstrap code
+L3 Module: l3names 2016/12/28 v6805 L3 Namespace for primitives
+L3 Module: l3basics 2016/12/28 v6805 L3 Basic definitions
+L3 Module: l3expan 2016/12/28 v6805 L3 Argument expansion
+L3 Module: l3tl 2017/02/06 v6842 L3 Token lists
+L3 Module: l3str 2017/01/01 v6809 L3 Strings
+L3 Module: l3seq 2017/02/06 v6842 L3 Sequences and stacks
+L3 Module: l3int 2016/12/28 v6805 L3 Integers
+\c_max_int=\count94
+\l_tmpa_int=\count95
+\l_tmpb_int=\count96
+\g_tmpa_int=\count97
+\g_tmpb_int=\count98
+L3 Module: l3quark 2016/12/28 v6805 L3 Quarks
+L3 Module: l3prg 2017/01/01 v6811 L3 Control structures
+\g__prg_map_int=\count99
+L3 Module: l3clist 2017/02/06 v6842 L3 Comma separated lists
+L3 Module: l3token 2016/12/28 v6805 L3 Experimental token manipulation
+L3 Module: l3prop 2016/12/28 v6805 L3 Property lists
+L3 Module: l3msg 2016/12/28 v6805 L3 Messages
+L3 Module: l3file 2016/12/28 v6805 L3 File and I/O operations
+\l_iow_line_count_int=\count100
+\l__iow_target_count_int=\count101
+\l__iow_current_line_int=\count102
+\l__iow_current_word_int=\count103
+\l__iow_current_indentation_int=\count104
+L3 Module: l3skip 2017/01/01 v6809 L3 Dimensions and skips
+\c_zero_dim=\dimen126
+\c_max_dim=\dimen127
+\l_tmpa_dim=\dimen128
+\l_tmpb_dim=\dimen129
+\g_tmpa_dim=\dimen130
+\g_tmpb_dim=\dimen131
+\c_zero_skip=\skip44
+\c_max_skip=\skip45
+\l_tmpa_skip=\skip46
+\l_tmpb_skip=\skip47
+\g_tmpa_skip=\skip48
+\g_tmpb_skip=\skip49
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+L3 Module: l3keys 2017/01/01 v6811 L3 Key-value interfaces
+\l_keys_choice_int=\count105
+L3 Module: l3fp 2016/12/28 v6805 L3 Floating points
+\c__fp_leading_shift_int=\count106
+\c__fp_middle_shift_int=\count107
+\c__fp_trailing_shift_int=\count108
+\c__fp_big_leading_shift_int=\count109
+\c__fp_big_middle_shift_int=\count110
+\c__fp_big_trailing_shift_int=\count111
+\c__fp_Bigg_leading_shift_int=\count112
+\c__fp_Bigg_middle_shift_int=\count113
+\c__fp_Bigg_trailing_shift_int=\count114
+L3 Module: l3sort 2017/02/07 v6847 L3 Sorting functions
+\l__sort_length_int=\count115
+\l__sort_min_int=\count116
+\l__sort_top_int=\count117
+\l__sort_max_int=\count118
+\l__sort_true_max_int=\count119
+\l__sort_block_int=\count120
+\l__sort_begin_int=\count121
+\l__sort_end_int=\count122
+\l__sort_A_int=\count123
+\l__sort_B_int=\count124
+\l__sort_C_int=\count125
+L3 Module: l3box 2016/12/28 v6805 L3 Experimental boxes
+\c_empty_box=\box28
+\l_tmpa_box=\box29
+\l_tmpb_box=\box30
+\g_tmpa_box=\box31
+\g_tmpb_box=\box32
+L3 Module: l3coffins 2016/12/28 v6805 L3 Coffin code layer
+\l__coffin_internal_box=\box33
+\l__coffin_internal_dim=\dimen132
+\l__coffin_offset_x_dim=\dimen133
+\l__coffin_offset_y_dim=\dimen134
+\l__coffin_x_dim=\dimen135
+\l__coffin_y_dim=\dimen136
+\l__coffin_x_prime_dim=\dimen137
+\l__coffin_y_prime_dim=\dimen138
+\c_empty_coffin=\box34
+\l__coffin_aligned_coffin=\box35
+\l__coffin_aligned_internal_coffin=\box36
+\l_tmpa_coffin=\box37
+\l_tmpb_coffin=\box38
+\l__coffin_display_coffin=\box39
+\l__coffin_display_coord_coffin=\box40
+\l__coffin_display_pole_coffin=\box41
+\l__coffin_display_offset_dim=\dimen139
+\l__coffin_display_x_dim=\dimen140
+\l__coffin_display_y_dim=\dimen141
+L3 Module: l3color 2016/12/28 v6805 L3 Experimental color support
+L3 Module: l3sys 2017/01/01 v6811 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2017/01/30 v6835 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen142
+\l__box_bottom_dim=\dimen143
+\l__box_left_dim=\dimen144
+\l__box_right_dim=\dimen145
+\l__box_top_new_dim=\dimen146
+\l__box_bottom_new_dim=\dimen147
+\l__box_left_new_dim=\dimen148
+\l__box_right_new_dim=\dimen149
+\l__box_internal_box=\box42
+\l__coffin_bounding_shift_dim=\dimen150
+\l__coffin_left_corner_dim=\dimen151
+\l__coffin_right_corner_dim=\dimen152
+\l__coffin_bottom_corner_dim=\dimen153
+\l__coffin_top_corner_dim=\dimen154
+\l__coffin_scaled_total_height_dim=\dimen155
+\l__coffin_scaled_width_dim=\dimen156
+L3 Module: l3luatex 2016/12/28 v6805 L3 Experimental LuaTeX-specific functions
+)
+("D:\MiKTeX 2.9\tex\latex\l3kernel\l3xdvipdfmx.def"
+File: l3xdvidpfmx.def 2016/12/28 v6805 L3 Experimental driver: xdvipdfmx
+\l__driver_tmp_box=\box43
+))
+("D:\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty"
+Package: xparse 2017/02/10 v6878 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count126
+\g__xparse_grabber_int=\count127
+\l__xparse_m_args_int=\count128
+\l__xparse_mandatory_args_int=\count129
+\l__xparse_v_nesting_int=\count130
+)
+Package: fontspec 2017/01/02 v2.5c Font selection for XeLaTeX and LuaLaTeX
+
+("D:\MiKTeX 2.9\tex\latex\fontspec\fontspec-xetex.sty"
+Package: fontspec-xetex 2017/01/02 v2.5c Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count131
+\l__fontspec_language_int=\count132
+\l__fontspec_strnum_int=\count133
+\l__fontspec_tmp_int=\count134
+\l__fontspec_em_int=\count135
+\l__fontspec_emdef_int=\count136
+\l__fontspec_tmpa_dim=\dimen157
+\l__fontspec_tmpb_dim=\dimen158
+\l__fontspec_tmpc_dim=\dimen159
+\g__file_internal_ior=\read1
+
+("D:\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/01/24 v2.0c Standard LaTeX package
+
+("D:\MiKTeX 2.9\tex\latex\base\tuenc.def"
+File: tuenc.def 2017/01/24 v2.0c Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 67.
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 470.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 486.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 502.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 518.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 523.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 528.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 533.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 538.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 558.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 562.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 569.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 618.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 629.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 637.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 645.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 666.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 683.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 687.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 691.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 696.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 702.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCommand with sig. 'mO{}m' on line 3288.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingAccent with sig. 'mm' on line 3294.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingSymbol with sig. 'mm' on line 3300.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingComposite with sig. 'mmm' on line 3306.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3312.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3337.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareSymbol with sig. 'm' on line 3343.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareComposite with sig. 'mm' on line 3351.
+.................................................
+
+("D:\MiKTeX 2.9\tex\latex\fontspec\fontspec.cfg")
+LaTeX Info: Redefining \itshape on input line 3531.
+LaTeX Info: Redefining \slshape on input line 3536.
+LaTeX Info: Redefining \scshape on input line 3541.
+LaTeX Info: Redefining \upshape on input line 3546.
+LaTeX Info: Redefining \em on input line 3566.
+LaTeX Info: Redefining \emph on input line 3583.
+LaTeX Info: Redefining \- on input line 3590.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 3685.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 3689.
+.................................................
+))
+("D:\MiKTeX 2.9\tex\latex\realscripts\realscripts.sty"
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
+ts
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesubscript with sig. 'm' on line 19.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesuperscript with sig. 'm' on line 22.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsubscript with sig. 's' on line 25.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsuperscript with sig. 's' on line 28.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsubscript with sig. 'm' on line 45.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsuperscript with sig. 'm' on line 60.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsubsuperscript with sig. 'sO{l}mm' on line 138.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsupersubscript with sig. 'sO{l}mm' on line 143.
+.................................................
+\subsupersep=\dimen160
+)
+("D:\MiKTeX 2.9\tex\latex\metalogo\metalogo.sty"
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+
+("D:\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("D:\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("D:\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+
+("D:\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("D:\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+
+("D:\MiKTeX 2.9\tex\latex\graphics-def\xetex.def"
+File: xetex.def 2016/07/11 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/
+JK)
+))
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
+)
+\xl@everylogo=\toks16
+\xl@@everylogo=\toks17
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+\l__xetex_show_hyphens_wrapping_box=\box44
+\l__xetex_show_hyphens_temp_box=\box45
+\l__xetex_show_hyphens_final_box=\box46
+\g__xetex_show_hyphens_word_box=\box47
+)
+("D:\MiKTeX 2.9\tex\xelatex\xunicode\xunicode.sty"
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+("D:\MiKTeX 2.9\tex\latex\tipa\t3enc.def"
+File: t3enc.def 2001/12/31 T3 encoding
+
+
+LaTeX Font Warning: Font shape `TU/ptm/m/sl' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 316.
+
+)
+\tipaTiiicode=\count137
+\tipasavetokens=\toks18
+\tipachecktokens=\toks19
+)
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font "Kinnari" does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Kinnari scale = 0.9642050070661487.
+.................................................
+\g__fontspec_family_Kinnari_int=\count138
+.................................................
+. fontspec info: "set-scale"
+. 
+. Kinnari scale = 0.9642050070661487.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Kinnari/B scale = 0.9131348398150842.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Kinnari/I scale = 0.9642050070661487.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Kinnari/BI scale = 0.9131348398150842.
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Kinnari(0)' created for font 'Kinnari' with options
+. [Scale=MatchLowercase,Ligatures=TeX,Scale=1.0].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->s*[1.0]"Kinnari/OT:mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.: <->s*[1.0]"Kinnari/B/OT:mapping=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1.0]"Kinnari/I/OT:mapping=tex-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1.0]"Kinnari/BI/OT:mapping=tex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
+LaTeX Info: Redefining \rmfamily on input line 14.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 14.
+
+*************************************************
+* fontspec warning: "script-not-exist"
+* 
+* Font 'TlwgTypewriter' does not contain script 'Thai'.
+*************************************************
+.................................................
+. fontspec info: "set-scale"
+. 
+. TlwgTypewriter scale = 1.071943209469967.
+.................................................
+\g__fontspec_family_TlwgTypewriter_int=\count139
+.................................................
+. fontspec info: "set-scale"
+. 
+. TlwgTypewriter scale = 1.071943209469967.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. TlwgTypewriter/B scale = 1.022884717450208.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. TlwgTypewriter/I scale = 1.071943209469967.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. TlwgTypewriter/BI scale = 1.022884717450208.
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'TlwgTypewriter(0)' created for font 'TlwgTypewriter' with
+. options
+. [Scale=MatchLowercase,WordSpace={1,0,0},PunctuationSpace=WordSpace,Script=Tha
+i].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1.071943209469967]"TlwgTypewriter/OT"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1.022884717450208]"TlwgTypewriter/B/OT"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1.071943209469967]"TlwgTypewriter/I/OT"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1.022884717450208]"TlwgTypewriter/BI/OT"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
+.................................................
+LaTeX Info: Redefining \ttfamily on input line 18.
+("D:\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) ("D:\MiKTeX 2.9\tex\latex\cite\cite.sty"
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (MyPaper.aux)
+\openout1 = `MyPaper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 270.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 270.
+ ("D:\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/n' will be
+(Font)              scaled to size 5.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/it' will be
+(Font)              scaled to size 5.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/it' will be
+(Font)              scaled to size 5.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/n' will be
+(Font)              scaled to size 7.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/it' will be
+(Font)              scaled to size 7.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/it' will be
+(Font)              scaled to size 7.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/n' will be
+(Font)              scaled to size 8.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/it' will be
+(Font)              scaled to size 8.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/it' will be
+(Font)              scaled to size 8.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/n' will be
+(Font)              scaled to size 9.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/it' will be
+(Font)              scaled to size 9.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/it' will be
+(Font)              scaled to size 9.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/n' will be
+(Font)              scaled to size 10.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/it' will be
+(Font)              scaled to size 10.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/n' will be
+(Font)              scaled to size 11.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/n' will be
+(Font)              scaled to size 11.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/it' will be
+(Font)              scaled to size 11.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/it' will be
+(Font)              scaled to size 11.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/n' will be
+(Font)              scaled to size 12.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/it' will be
+(Font)              scaled to size 12.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/n' will be
+(Font)              scaled to size 17.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/n' will be
+(Font)              scaled to size 17.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/it' will be
+(Font)              scaled to size 17.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/it' will be
+(Font)              scaled to size 17.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/n' will be
+(Font)              scaled to size 20.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/n' will be
+(Font)              scaled to size 20.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/it' will be
+(Font)              scaled to size 20.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/it' will be
+(Font)              scaled to size 20.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/n' will be
+(Font)              scaled to size 24.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/n' will be
+(Font)              scaled to size 24.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/it' will be
+(Font)              scaled to size 24.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/bx/it' will be
+(Font)              scaled to size 24.0pt on input line 270.
+
+-- Lines per column: 56 (exact).
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 270.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 270.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 270.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 270.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 270.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 270.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 270.
+LaTeX Font Info:    Redeclaring math accent \check on input line 270.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 270.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 270.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 270.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 270.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 270.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 270.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/Kinnari(0)/m/n on input line 270.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 270.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/Kinnari(0)/m/n on input line 270.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/Kinnari(0)/m/n --> TU/Kinnari(0)/m/n on input line 2
+70.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/Kinnari(0)/m/it on input line 270.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/Kinnari(0)/bx/n on input line 270.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 270.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/TlwgTypewriter(0)/m/n on input line
+ 270.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/Kinnari(0)/m/n --> TU/Kinnari(0)/bx/n on input line 
+270.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/Kinnari(0)/bx/it on input line 270
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 270.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/TlwgTypewriter(0)/bx/n on input lin
+e 270.
+
+LaTeX Warning: No \author given.
+
+
+LaTeX Warning: No \author given.
+
+
+LaTeX Warning: No \author given.
+
+
+LaTeX Font Warning: Font shape `TU/Kinnari(0)/m/sc' undefined
+(Font)              using `TU/Kinnari(0)/m/n' instead on input line 353.
+
+(partIntro.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+[]\TU/Kinnari(0)/m/n/10 ในปัจจุบันเรามีการใช้งานอุปกรณ์อิเล็กทรอนิกส์กันมาก
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+\TU/Kinnari(0)/m/n/10 อาจสามารถเรียกได้มันว่าเป็นอวัยวะส่วนหนึ่งของเรา ดังนั้นจ
+ึง
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+\TU/Kinnari(0)/m/n/10 เป็นเหตุให้มีการพัฒนาโปรแกรมสำหรับใช้งานบนอุปกรณ์พวกนี้
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[]\TU/Kinnari(0)/m/n/10 และในการพัฒนาโปรแกรมหนึ่งให้ติดตลาดการใช้งาน ไม่ใช่
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\TU/Kinnari(0)/m/n/10 เพียงแค่ว่าเราพัฒนาโปรแกรมตามความพึงพอใจของเราเพียง
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\TU/Kinnari(0)/m/n/10 อย่างเดียวเท่านั้น แต่เราต้องดูกระแสตอบรับของผู้ใช้งาน
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\TU/Kinnari(0)/m/n/10 ที่เราพัฒนาขึ้นมา มิเช่นนั้นโปรแกรมที่เราพัฒนามานั้นอาจจะ
+
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 4--5
+\TU/Kinnari(0)/m/n/10 ไม่มีใครใช้มันเลยก็เป็นไปได้ โดยมีการสำรวจข้อมูลคำถามที่น
+ัก
+ []
+
+
+Underfull \hbox (badness 6961) in paragraph at lines 4--5
+\TU/Kinnari(0)/m/n/10 พัฒนาต้องการทราบ ซึ่งพบว่านักพัฒนาต้องการทราบ ”What
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+\TU/Kinnari(0)/m/n/10 มาแสดงถึงปัญหา ความคิดเห็นและให้คะแนนโดยรวมเกี่ยวกับ
+ []
+
+
+Underfull \hbox (badness 6380) in paragraph at lines 6--7
+\TU/Kinnari(0)/m/n/10 คนอื่น ๆ แต่ทั้งนี้ทั้งนั้นความคิดเห็นของผู้ใช้งานในโปรแก
+รม
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 6--7
+\TU/Kinnari(0)/m/n/10 นั้น ๆ อาจจะมีจำนวนมากจนทำให้เราไม่สามารถที่จะวิเคราะห์
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+\TU/Kinnari(0)/m/n/10 ความคิดเห็นได้ด้วยตนเองทั้งหมด หรืออาจจะทำได้แต่ใช้เวลา
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+\TU/Kinnari(0)/m/n/10 ที่นานจนทำให้โปรแกรมนั้นอัพเดทหรือปรับปรุงแก้ไขปัญหาที่
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+\TU/Kinnari(0)/m/n/10 เกิดได้ไม่ทัน อีกทั้งความคิดเห็นของผู้ใช้งานบางคนอาจจะไม่
+มี
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 6--7
+\TU/Kinnari(0)/m/n/10 ประโยชน์ต่อการวิเคราะห์ข้อมูล (เช่น การบอกว่า ”ดี” เพียง
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+\TU/Kinnari(0)/m/n/10 อย่างเดียว เราไม่สามารถทราบได้ว่าคำว่าดีที่ว่าหมายถึงอะไร
+)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+\TU/Kinnari(0)/m/n/10 และ rate ที่ผู้ใช้งานให้มานั้นสามารถบอกได้เพียงแค่ภาพรวม
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+\TU/Kinnari(0)/m/n/10 ของโปรแกรมเท่านั้น ไม่สามารถแจกแจงได้ว่าส่วนไหนที่ผู้ใช้
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+[]\TU/Kinnari(0)/m/n/10 ด้วยปัญหาที่กล่าวข้างต้นทำให้เกิดงานวิจัยที่ใช้ในการวิเ
+คราะห์
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\TU/Kinnari(0)/m/n/10 ความคิดเห็นของผู้ใช้งานโปรแกรมเหล่านี้เป็นจำนวนมาก โดย
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\TU/Kinnari(0)/m/n/10 มีเป้าหมายในการช่วยลดภาระการวิเคราะห์ความคิดเห็นของผู้ใช้
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\TU/Kinnari(0)/m/n/10 ทั้งหมด หรือการสกัดเอาคำสำคัญของความคิดเห็นเหล่านั้นขึ้น
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 10--356
+[]\TU/Kinnari(0)/m/n/10 แต่ด้วยในขณะนี้งานวิจัยที่มียังไม่สามารถนำมาใช้กับการ
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 10--356
+\TU/Kinnari(0)/m/n/10 วิเคราะห์ความคิดเห็นภาษาไทยได้ ซึ่งงานวิจัยนี้จึงมีจุดประ
+สงค์
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--356
+\TU/Kinnari(0)/m/n/10 ในการพัฒนากระบวนการและแนวคิดในการวิเคราะห์ความคิด
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--356
+\TU/Kinnari(0)/m/n/10 เห็นที่เป็นภาษาไทยเพื่อเป็นแนวทางในการวิเคราะห์ข้อมูลได้
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 10--356
+\TU/Kinnari(0)/m/n/10 อย่างมีประสิทธิภาพมากขึ้น โดยในหัวข้อ II[] จะกล่าวถึงทฤษฎ
+ี
+ []
+
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 358.
+(partBackground.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+[]\TU/Kinnari(0)/m/sc/10 เนื่องจากในการประมวลผลข้อความต่าง ๆ เราจำเป็นต้อง
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+\TU/Kinnari(0)/m/sc/10 ทราบถึงคำแต่ละคำในข้อความนั้น เพื่อที่เราจะสามารถนำคำ
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 2--3
+\TU/Kinnari(0)/m/sc/10 เหล่านั้นมาพิจารณาได้ จึงทำให้เกิดกระบวนการการตัดคำขึ้นม
+า
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+\TU/Kinnari(0)/m/sc/10 แต่ทั้งนี้ทั้งนั้นการตัดคำเพียงอย่างเดียว อาจจะไม่เพียงพ
+อต่อ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+\TU/Kinnari(0)/m/sc/10 หมายและหน้าที่ของคำที่ต่างกัน จึงเป็นเหตุให้นอกจากการตัด
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+\TU/Kinnari(0)/m/sc/10 คำเพียงอย่างเดียวนั้นไม่สามารถแยกแยะความหมายและหน้าที่
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[]\TU/Kinnari(0)/m/sc/10 ซึ่งในงานวิจัยนี้มีความต้องการที่จะวิเคราะห์หาหัวข้อที
+่แสดง
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\TU/Kinnari(0)/m/sc/10 ถึงทัศนคติของความคิดเห็นของผู้ใช้งานโปรแกรมบนอุปกรณ์
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\TU/Kinnari(0)/m/sc/10 smart device ทำให้งานวิจัยนี้เกี่ยวข้องกับการประมวลผล
+ []
+
+
+Underfull \hbox (badness 7081) in paragraph at lines 4--5
+\TU/Kinnari(0)/m/sc/10 ข้อความ ซึ่งต้องมีการตัดคำและหาหน้าที่ของคำเหล่านั้น และ
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+\TU/Kinnari(0)/m/sc/10 นอกจากนั้นงานวิจัยนี้ยังต้องหาหัวข้อของความคิดเห็น และ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+[]\TU/Kinnari(0)/m/sc/10 การตัดคำในประโยคภาษาอังกฤษนั้นเราสามารถทำได้โดยไม่
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\TU/Kinnari(0)/m/sc/10 ประโยคภาษาไทยนั้นจะมีลักษณะที่คล้ายกับภาษาจีนและญี่ปุ่น
+ []
+
+
+Underfull \hbox (badness 7151) in paragraph at lines 8--9
+\TU/Kinnari(0)/m/sc/10 ตรงที่เราไม่มีการเว้นวรรคคำแต่ละคำในประโยค ทำให้การหาคำ
+ []
+
+[1
+
+
+]
+Underfull \hbox (badness 1852) in paragraph at lines 16--17
+\TU/Kinnari(0)/m/sc/10 มีจำนวนคำที่น้อยที่สุดออกมา แต่ถ้าเกิดรูปแบบที่มีคำน้อยท
+ี่สุด
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 20--21
+ \TU/Kinnari(0)/m/it/10 3) Probabilistic Model [5]: [][] \TU/Kinnari(0)/m/sc/10
+ วิธีการนี้จะมีการใช้ข้อมูลเชิง
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 20--21
+\TU/Kinnari(0)/m/sc/10 สถิติการเกิดคำและหน้าที่ของคำ เข้ามาช่วยในการหาโอกาสของ
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 20--21
+\TU/Kinnari(0)/m/sc/10 pus ที่มีข้อมูลของคำและหน้าที่ของคำที่ถูกต้อง เพื่อนำมาใ
+ช้ใน
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+[]\TU/Kinnari(0)/m/sc/10 ซึ่งในงานวิจัยนี้ผู้วิจัยเลือกใช้วิธีการตัดคำแบบ Longe
+st
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 28--29
+\TU/Kinnari(0)/m/sc/10 Matching โดยใช้โปรแกรม LexTo [6] ซึ่งเป็นโปรแกรมที่ถูก
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 30--39
+[]\TU/Kinnari(0)/m/sc/10 หน้าที่ของคำเป็นสิ่งที่ใช้กำหนดชนิดของคำในข้อความนั้น 
+ๆ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+[]\TU/Kinnari(0)/m/sc/10 โดยการหาหน้าที่ของคำนั้นเป็นส่วนหนึ่งในการประมวลผล
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+[]\TU/Kinnari(0)/m/sc/10 ในการหาหน้าที่ของคำนั้นมีเครื่องมือที่ช่วยในการค้นหาอย
+ู่
+ []
+
+
+Underfull \hbox (badness 5533) in paragraph at lines 42--44
+\TU/Kinnari(0)/m/sc/10 รองรับการเพิ่ม corpus อื่นๆ นอกจากที่มีอยู่ในระบบอยู่แล้
+ว
+ []
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 42--44
+\TU/Kinnari(0)/m/sc/10 และ RDRPOStagger [10] เป็นเครื่องมือสำหรับการหาหน้าที่
+ []
+
+
+Underfull \hbox (badness 6125) in paragraph at lines 46--47
+[]\TU/Kinnari(0)/m/sc/10 Topic Modeling เป็นวิธีการจัดกลุ่มหัวข้อของประโยคที่เร
+า
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+ \TU/Kinnari(0)/m/it/10 1) lexicon-based: [][] \TU/Kinnari(0)/m/sc/10 คือการนำค
+ำที่ต้องการหาค่าทัศนคติไป
+ []
+
+
+Underfull \hbox (badness 7925) in paragraph at lines 55--56
+\TU/Kinnari(0)/m/sc/10 เปรียบเทียบกับ lexicon ที่มีค่าทัศนคติกำกับอยู่ เพื่อใช้
+เป็น
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 57--361
+\TU/Kinnari(0)/m/sc/10 มาฝึกฝนการวิเคราะห์ของคอมพิวเตอร์ เพื่อนำไปเป็นฐาน
+ []
+
+(partRelated.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+\TU/Kinnari(0)/m/sc/10 วิจัยที่เกี่ยวข้องกับการวิเคราะห์ทัศนคติของผู้ใช้งานโปรแ
+กรมบน
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 2--3
+\TU/Kinnari(0)/m/sc/10 โทรศัพท์เคลื่อนที่ และ 2. งานวิจัยที่เกี่ยวข้องกับการวิเ
+คราะห์
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+ \TU/Kinnari(0)/m/it/10 1) งานวิจัยที่เกี่ยวข้องกับการวิเคราะห์ทัศนคติของผู้ใช้
+งาน
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+\TU/Kinnari(0)/m/sc/10 วิเคราะห์ทัศนคติของผู้ใช้งานโปรแกรมบนโทรศัพท์เคลื่อนที่น
+ั้น
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 5--6
+\TU/Kinnari(0)/m/sc/10 อังกฤษเพียงอย่างเดียว [14]–[16] เป็นเหตุให้งานวิจัยเหล่า
+นี้
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+\TU/Kinnari(0)/m/sc/10 ที่จะสกัดและจัดอันดับประโยคที่มีสารประโยชน์ (informative
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+\TU/Kinnari(0)/m/sc/10 reviews) จากข้อความของผู้ใช้งาน โดยพวกเขาใช้วิธีการแบ่ง
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+\TU/Kinnari(0)/m/sc/10 กลุ่มคำที่มีประโยชน์และไม่มีประโยชน์ (classifier) ด้วยวิ
+ธี
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+\TU/Kinnari(0)/m/sc/10 ซึ่งเป็นการจัดกลุ่มโดยการนำข้อมูลที่ทราบคำตอบมาเป็นแบบ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+\TU/Kinnari(0)/m/sc/10 ในการหาข้อมูลที่ไม่ทราบคำตอบ จากนั้นจึงจะนำข้อมูลที่เป็น
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[]\TU/Kinnari(0)/m/sc/10 โดยงานวิจัยเหล่านี้มีความคล้ายกับงานวิจัยนี้ตรงที่ต่าง
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+\TU/Kinnari(0)/m/sc/10 ก็ต้องการหาวิธีที่จะแสดงถึงหัวข้อที่ผู้ใช้งานต้องการสื่อ
+สาร
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+\TU/Kinnari(0)/m/sc/10 โดยเฉพาะอย่างยิ่งงานวิจัยของ Emitza ที่มีการวิเคราะห์หา
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+\TU/Kinnari(0)/m/sc/10 sentiment แต่ทั้งนี้ทั้งนั้นงานวิจัยเหล่านี้อยู่เป็นการว
+ิจัยที่ทำอยู่
+ []
+
+
+Underfull \hbox (badness 5119) in paragraph at lines 17--18
+ \TU/Kinnari(0)/m/it/10 2) งานวิจัยที่เกี่ยวข้องกับการวิเคราะห์ข้อมูลภาษาไทย: [
+][] \TU/Kinnari(0)/m/sc/10 จาก
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+\TU/Kinnari(0)/m/sc/10 การศึกษาพบว่ามีงานวิจัยที่เกี่ยวกับการวิเคราะห์ข้อมูลภาษ
+าไทย
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 17--18
+\TU/Kinnari(0)/m/sc/10 [20], การจัดกลุ่มคำตามอารมณ์พื้นฐานของมนุษย์ [21], การ
+ []
+
+
+Underfull \hbox (badness 5862) in paragraph at lines 17--18
+\TU/Kinnari(0)/m/sc/10 วิเคราะห์ทัศนคติบนสื่อสังคมออนไลน์ [22], และการวิเคราะห์
+
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 17--18
+\TU/Kinnari(0)/m/sc/10 ทัศนคติของผู้ใช้งานโรงแรม [23] แต่ผู้วิจัยยังไม่พบงานวิจ
+ัยที่
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+\TU/Kinnari(0)/m/sc/10 เสนอวิธีการสรุปบทความของเอกสารภาษาไทยด้วยการสกัดหา
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+\TU/Kinnari(0)/m/sc/10 ย่อหน้าที่สำคัญ โดยพวกเขาได้แบ่งข้อความออกเป็นย่อหน้า
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+\TU/Kinnari(0)/m/sc/10 เชื่อมโยงย่อหน้าที่มีความเกี่ยวข้องกัน จากคำที่ต้องการค้
+นหา
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+\TU/Kinnari(0)/m/sc/10 เป็นเครื่องมือสำหรับการวิเคราะห์ทัศนคติบนสื่อสังคมออนไลน
+์
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 23--24
+\TU/Kinnari(0)/m/sc/10 เป็นต้น โดยใช้ LEXiTRON ซึ่งเป็นพจนานุกรมไทย-อังกฤษ
+ []
+
+
+Underfull \hbox (badness 5008) in paragraph at lines 23--24
+\TU/Kinnari(0)/m/sc/10 และอังกฤษ-ไทย ที่พัฒนาโดย NECTEC เพื่อแปลภาษาและ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+\TU/Kinnari(0)/m/sc/10 จับกลุ่มของคำที่มีความหมายใกล้เคียงกัน และใช้ Utilizatio
+n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+\TU/Kinnari(0)/m/sc/10 ส่วนประกอบส่วนหนึ่งของงานวิจัยของเขา ในการสกัดหัวข้อ/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+\TU/Kinnari(0)/m/sc/10 คำสำคัญ ออกมาจากข้อความ โดยงานวิจัยนี้จะแบ่งกลุ่มของ
+ []
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 23--24
+\TU/Kinnari(0)/m/sc/10 คำถาม และความคิดเห็น โดยพวกเขาได้แยกความคิดเห็นออก
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\TU/Kinnari(0)/m/sc/10 วิเคราะห์ทัศนคติของผู้ที่มาใช้โรงแรม โดยใช้ lexicon และ
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 25--26
+\TU/Kinnari(0)/m/sc/10 corpus สำหรับค้นหาคำและทัศนคติของคำ โดยงานวิจัยนี้มีหัว
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\TU/Kinnari(0)/m/sc/10 ประโยคให้อยู่ในหัวข้อที่ต้องการ และนำกลุ่มหัวข้อเหล่านั้
+นไป
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+[]\TU/Kinnari(0)/m/sc/10 โดยงานวิจัยเหล่านี้ต่างก็ต้องมีการหา POS เพื่อที่จะกรอ
+ง
+ []
+
+
+Underfull \hbox (badness 5533) in paragraph at lines 27--29
+\TU/Kinnari(0)/m/sc/10 adjective) โดยงานวิจัย S-Sense และ การหาทัศนคติของผู้
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+\TU/Kinnari(0)/m/sc/10 ใช้งานโรงแรม ต่างมีความต้องการที่จะหาทัศนคติของผู้ใช้งาน
+
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 27--29
+\TU/Kinnari(0)/m/sc/10 หาทัศนคติของผู้ใช้งานโรงแรม นั้นจะมีหัวข้อที่ต้องการจะหา
+อยู่
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+\TU/Kinnari(0)/m/sc/10 โปรแกรมก็จะมีหัวข้อที่ถูกกล่าวถึงต่างกัน ทำให้ไม่สามารถท
+ี่จะ
+ []
+
+) (partApproach.tex
+File: Process.jpg Graphic file (type QTm)
+ <use  "Process.jpg" >
+Underfull \hbox (badness 10000) in paragraph at lines 1--9
+[]\TU/Kinnari(0)/m/sc/10 การวิจัยนี้มีเป้าหมายในการหาหัวข้อและทัศนคติของความ
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 1--9
+\TU/Kinnari(0)/m/sc/10 ประมวลผลภาษาธรรมชาติ และการทำเหมืองข้อมูล Figure 1[]
+ []
+
+
+Underfull \hbox (badness 4254) in paragraph at lines 1--9
+\TU/Kinnari(0)/m/sc/10 จะแสดงขั้นตอนทั้งหมดในการวิจัย โดยจะเริ่มตั้งแต่ 1. Data
+
+ []
+
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/sc' will be
+(Font)              scaled to size 8.0pt on input line 12.
+LaTeX Font Info:    Font shape `TU/Kinnari(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 15.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+[]\TU/Kinnari(0)/m/sc/10 เราได้รวบรวมข้อมูลความคิดเห็นของผู้ใช้งานจากโปรแกรม
+ []
+
+[3]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+[]\TU/Kinnari(0)/m/sc/10 หลังจากที่เราได้ข้อมูลที่ต้องการแล้ว เราจะนำข้อมูลเหล่
+านั้น
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 61--62
+\TU/Kinnari(0)/m/sc/10 คิดเห็นอาจจะไม่ได้มีเพียงประโยคเดียว ดังนั้นเราจึงจำเป็น
+ต้อง
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+\TU/Kinnari(0)/m/sc/10 แบ่งประโยคออกมาเสียก่อน เนื่องจากประโยคภาษาไทยนั้น
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 61--62
+\TU/Kinnari(0)/m/sc/10 เราไม่มี pattern ที่ตายตัวในการแบ่งประโยคเหมือนอย่างภาษา
+
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 61--62
+\TU/Kinnari(0)/m/sc/10 จำแนกประโยคต่าง ๆ ดังนั้นเราจึงใช้วิธี manual ในการแบ่ง
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+ \TU/Kinnari(0)/m/it/10 2) word segmentation: [][] \TU/Kinnari(0)/m/sc/10 เมื่อ
+เราแบ่งประโยคเรียบร้อยแล้ว
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+\TU/Kinnari(0)/m/sc/10 เราจะนำประโยคที่ได้แต่ละประโยคมาตัดแยกคำเพื่อนำไปหา
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 67--69
+\TU/Kinnari(0)/m/sc/10 POS ต่อไป โดยในการตัดคำนั้นเราได้ใช้เครื่องมือที่ชื่อ Le
+xTo
+ []
+
+
+Underfull \hbox (badness 5771) in paragraph at lines 67--69
+\TU/Kinnari(0)/m/sc/10 ซึ่งพัฒนาโดย NECTEC เป็นซึ่งใช้วิธีการตัดคำแบบ longest
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+[]\TU/Kinnari(0)/m/sc/10 ดังนั้นขั้นตอนแรกของการหา sentiment ของงานวิจัยนี้
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+\TU/Kinnari(0)/m/sc/10 จึงเป็นการแปลคำศัพท์จากไทย-อังกฤษ โดยเราเลือกใช้
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+\TU/Kinnari(0)/m/sc/10 LEXiTRON [26] เป็นพจนานุกรมในการแปลคำศัพท์ โดย
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 81--84
+\TU/Kinnari(0)/m/sc/10 คำ โดยเรากำหนดให้ number of topic ที่ต้องการเป็น 20
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+\TU/Kinnari(0)/m/sc/10 ประโยคแล้ว เราจะรวมรวบประโยคที่มีคำตรงกับในกลุ่มคำของ
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (partResult.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--19
+[]\TU/Kinnari(0)/m/sc/10 เราได้ตรวจสอบความถูกต้องของงานวิจัยโดยให้ผู้เชี่ยวชาญ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+[]\TU/Kinnari(0)/m/sc/10 เนื่องจากเรายังหาวิธีที่จะใช้ในการแบ่งประโยคที่ชัดเจนย
+ังไม่
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 20--21
+\TU/Kinnari(0)/m/sc/10 corpus ที่เราใช้งาน จึงเป็นเหตุให้เราอาจไม่สามารถหาทัศนค
+ติ
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 22--23
+[]\TU/Kinnari(0)/m/sc/10 และในการหา sentiment โดยการแปลภาษาไทย-อังกฤษ คำ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+\TU/Kinnari(0)/m/sc/10 บางที่แปลได้ อาจแปลได้ไม่ตรงตามความต้องการของประโยค
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+[]\TU/Kinnari(0)/m/sc/10 อีกทั้งในเรื่องของการหาหัวข้อที่ไม่มีความแน่นอนของ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+\TU/Kinnari(0)/m/sc/10 โปรแกรมต่าง ๆ จึงทำให้เรากำหนดจำนวนหัวข้อที่ต้องการ
+ []
+
+) (partConclusion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+[]\TU/Kinnari(0)/m/sc/10 งานวิจัยนี้ ได้เสนอแนวคิดในการหาหัวข้อและทัศนคติของ
+ []
+
+
+Underfull \hbox (badness 4403) in paragraph at lines 2--3
+\TU/Kinnari(0)/m/sc/10 โปรแกรมในโทรศัพท์เคลื่อนที่ ด้วยวิธีการ NLP และ Topic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+\TU/Kinnari(0)/m/sc/10 modeling ซึ่งผลลัพธ์ที่ได้อาจจะยังไม่น่าพอใจมากนัก แต่ยั
+ง
+ []
+
+) (MyPaper.bbl [4]
+Underfull \hbox (badness 10000) in paragraph at lines 147--151
+[]\TU/Kinnari(0)/m/sc/8 C. Haruechaiyasak, A. Kongthon, P. Palingoon, and
+ []
+
+
+Underfull \hbox (badness 4096) in paragraph at lines 147--151
+\TU/Kinnari(0)/m/sc/8 K. Trakultaweekoon, “S-sense: a sentiment analysis framew
+ork
+ []
+
+
+Underfull \vbox (badness 1253) has occurred while \output is active []
+
+ [5])
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[6
+
+] (MyPaper.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 14035 strings out of 427899
+ 283496 string characters out of 3155764
+ 341222 words of memory out of 3000000
+ 17825 multiletter control sequences out of 15000+200000
+ 5959 words of font info for 82 fonts, out of 3000000 for 9000
+ 1331 hyphenation exceptions out of 8191
+ 46i,9n,117p,10399b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on MyPaper.pdf (6 pages).
