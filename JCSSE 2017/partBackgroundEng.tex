@@ -9,8 +9,6 @@ There are several word segmentation techniques such as Longest Matching\cite{syl
 The Longest Matching technique attempts to match an entire string of Thai text with words contained in a given lexicon. If no word in the lexicon is matched with the string, the last character of the string is removed. The technique then attempts to match the truncated string with the lexicon again. The matching and truncating are repeated until a word is found in the lexicon. The word is then removed from the text, 
 and the entire process is itereated for the entire text.
 
-
-
 \subsection{Part of Speech}
 
 In addition to word segmentation, we also need to tag each word a part of speech to identify whether this word is a (1) noun, (2) pronoun, (3) verb, (4) adverb, (5) adjective, (6) preposition, (7) conjunction, (8) interjection. The number of parts of speech can vary depending on how precisely one wants to tag.
