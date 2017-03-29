@@ -10,9 +10,21 @@
 \usepackage{xltxtra}
 \usepackage{xunicode}
 \usepackage{fontspec}
-\defaultfontfeatures{Scale=MatchLowercase}
-\setmainfont[Scale=1.0]{Kinnari}
+
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{thai}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\newfontfamily\thaifont[Scale=1.2]{THSarabunNew}
+\newfontfamily\thaifontsf[Scale=1.2]{THSarabunNew}
+
+
+%\defaultfontfeatures{Scale=MatchLowercase}
+%\setmainfont[Scale=1.0]{Kinnari}
 \XeTeXlinebreaklocale “th_TH”
+
+
 
 %\setmainfont[Script=Thai]{Loma}
 \setmonofont[Script=Thai]{TlwgTypewriter}
