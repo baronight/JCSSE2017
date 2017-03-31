@@ -53,6 +53,7 @@
 
 
 \usepackage{url}
+\usepackage{multirow}
 
 
 
@@ -293,11 +294,17 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Boonyarit Deewattananon, Usa Sammapun}
-\IEEEauthorblockA{Department of Computer Science, Faculty of Science\\
-Kasetsart University, Bangkok, Thailand\\
-Email: \{g5614401148,fsciusa\}@ku.ac.th}
-}
+
+%%%%%%%%%%%%%%%%%%%%%%% Commented out for blind reviews %%%%%%%%%%%%%%%%%%%%%%%%
+
+%\author{\IEEEauthorblockN{Boonyarit Deewattananon, Usa Sammapun}
+%\IEEEauthorblockA{Department of Computer Science, Faculty of Science\\
+%Kasetsart University, Bangkok, Thailand\\
+%Email: \{g5614401148,fsciusa\}@ku.ac.th}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %\and
 %\IEEEauthorblockN{Usa Sammapun}
 %\IEEEauthorblockA{Twentieth Century Fox\\
@@ -338,7 +345,10 @@ Email: \{g5614401148,fsciusa\}@ku.ac.th}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-The abstract goes here. limited to the maximum of 6 pages of A4 form in PDF format. an abstract of about 100 words. The authors’ names and affiliations, postal addresses, telephones, fax numbers and e-mail addresses must be omitted.
+
+As more and more Thai people own mobile devices, mobile applications are high in demand. Before installing mobile applications, many users read reviews written by other users to determine whether or not the application is worth using. In addition, mobile application developers also rely on user reviews to get insight information on which aspects of the mobile application users like or do not like and why. They can use the information to market the beloved aspects of their software product and improve on the problematic ones. However, when there are many reviews, it is difficult to comprehend information in the user reviews. Several researches in recent years aim to extract opinions and sentiments from various documents such as Twitter, webboards, and software product reviews. Most of these researches are for English documents. For Thai language, researches usually focus on other contexts such as hotel reviews or pre-determined aspects of software products. In this paper, we present an approach to analyze user reviews written in Thai based on techniques in natural language processing, topic modelling, and sentiment analysis. The approach aims to help Thai users and developers discover dyamically, instead of pre-determined, various aspects or features and associated sentiments from a vast amount of user reviews. The result of the approach is a list of aspects or features with associated sentiments to provide an insight about the application for Thai users and developers. We have attempted to make the process to be as automatic and accurate as possible, but there are still limitations. The limitations and possible future works are also discussed in this paper.
+
+
 \end{abstract}
 
 % no keywords
@@ -383,13 +393,13 @@ The abstract goes here. limited to the maximum of 6 pages of A4 form in PDF form
 
 
 \section{Result}\label{Result}
-\input{partResult}
-%\input{partResultEng}
+%\input{partResult}
+\input{partResultEng}
 
 
 \section{Conclusion}\label{Conclusion}
-\input{partConclusion}
-%\input{partConclusionEng}
+%\input{partConclusion}
+\input{partConclusionEng}
 
 
 % conference papers do not normally have an appendix

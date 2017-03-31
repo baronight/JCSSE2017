@@ -87,7 +87,7 @@ To find score for each Thai word, our script automatically looks up in the LEXiT
 Besides assigning sentiment scores straightforwardly, further analysis is needed. For example, 
 a word that is preceded with the word {\selectlanguage{thai}ไม่}, which means "no" or "not", will have its sentiment score flipped. In addition, some Thai words have more than one associated English words where these English words also have different sentiment scores. In this case, all sentiment scores are  averaged and then assigned to the Thai word. When sentiment scores are assigned to all nouns, verbs, adjectives, and adverbs in a sentence, the sentiment score for a sentence is calculated by averaging these sentiment scores.
 
-Furthermore, we found that several negative sentences are assigned with positive score. Upon closer look, we found a pattern in these sentences where there is a word {\selectlanguage{thai}ชอบ} preceding with a negative verb such as "{\selectlanguage{thai}ชอบค้างบ่อยๆ}", which means the application often freezes. The word {\selectlanguage{thai}ชอบ} in Thai means "like", and if used in front of a verb, it also means "often". Since the POS tool tags {\selectlanguage{thai}ชอบ} as a verb which associates with the "like" meaning, its sentiment score is returned with a high positive number. This types of sentences are therefore incorrectly assigned with a positive sentiment. Hence, we eliminate the word {\selectlanguage{thai}ชอบ} that precedes a verb to increase accuracy.
+Furthermore, we found that several negative sentences are assigned with positive score. Upon closer look, we found a pattern in these sentences where there is a word {\selectlanguage{thai}ชอบ} preceding with a negative verb such as "{\selectlanguage{thai}ชอบค้างบ่อยๆ}", which means the application often freezes. The word {\selectlanguage{thai}ชอบ} in Thai means "like", and if used in front of a verb, it also means "often". Since the POS tool tags {\selectlanguage{thai}ชอบ} as a verb which associates with the "like" meaning, its sentiment score is returned with a high positive number. This type of sentences is therefore incorrectly assigned with positive sentiment. Hence, we eliminate the word {\selectlanguage{thai}ชอบ} that precedes a verb to increase accuracy.
 
 
 \begin{table}[h]
@@ -126,18 +126,15 @@ Furthermore, we found that several negative sentences are assigned with positive
 \end{table}
 
 \subsection{Topic or Feature Extraction}
-In addition to sentiment analysis, we also want to pinpoint what features or topics users are talking about in the review. We use LDA for topic modeling. We supplied the user reviews to the LDA Python tool by using only nouns, verbs, adjectives, adverbs. We specify the number of topics to be 20 because we do not know exactly how many features users are talking about in the reviews.
+In addition to sentiment analysis, we also want to pinpoint what topics or features users are talking about in the review. We use LDA, a topic modeling technique, to extract topics/features. We supplied only nouns, verbs, adjectives, and adverbs in all user reviews to the LDA Python tool. We specify the number of topics to be 20 because we do not know exactly how many features users are talking about in the reviews.
 
 We then choose topics with high probabilities and also choose words within the topics with high probabilities.
 
 %not finish
 
 \subsection{Summary}
-After sentences are annotated with sentiment scores and features are extracted, we summarize the information to assign sentiment scores to the extracted features. Sentences containing words belonging to a topic are grouped together and their scores are averaged to assign sentiment scores to the topic. 
+After sentences are annotated with sentiment scores and features are extracted, we summarize the information by assigning sentiment scores to the extracted features. The assigning process is done as follows. For each word belonging in a topic, we find all the sentences containing the word and collect all their sentiment scores. The absolute maximum sentiment score is then assigned to the topic.
 
-In addition, we also count how many sentencse with positive and negative scores for each topic so that developers can see in more details how much users like or dislike the features. 
-
-
-
+%In addition, we also count how many sentencse with positive and negative scores for each topic so that developers can see in more details how much users like or dislike the features. 
 
 
