@@ -1,16 +1,115 @@
-
-เราได้ตรวจสอบความถูกต้องของงานวิจัยโดยให้ผู้เชี่ยวชาญประเมินทัศนคติของประโยค ซึ่งจะได้ค่าความถูกต้องตาม Table \ref{table:f-measureSenti}
+เราได้ผลการวิเคราะห์หาหัวข้อที่ผู้ใช้งานกล่าวถึงของโปรแกรม man man ดัง Table\ref{table:topicManMan} 
 \begin{table}
-	\caption{F-measure and Accuracy for sentiment analysis}
+	\caption{20 topic of man man application}
+	\label{table:topicManMan}
+	\centering
+	\begin{tabular}{|l|r|
+%			r|r|
+		}
+		\hline
+		\multicolumn{1}{|c|}{topic} 
+		& \multicolumn{1}{|c|}{sentiment} 
+%		& \multicolumn{1}{|c|}{no. of positive} 
+%		& \multicolumn{1}{|c|}{no. of negative}
+		\\
+		\hline
+		{\selectlanguage{thai}เปลี่ยน ภาษา} & 0.2770 
+%		& 35 & 9 
+		\\
+		\hline
+		{\selectlanguage{thai}พัฒนา ยอด} & 0.2666 
+%		& 47 & 6 
+		\\
+		\hline
+		sticker {\selectlanguage{thai}หน่อย ขยาย} & 0.2046 
+%		& 36 & 15 
+		\\
+		\hline
+		{\selectlanguage{thai}สะดวก สวย} & 0.3926 
+%		& 84 & 13 
+		\\
+		\hline
+		{\selectlanguage{thai}สายตา ขนาด ใหญ่} & 0.5153 
+%		& 143 & 26 
+		\\
+		\hline
+		{\selectlanguage{thai}ยกเว้น ทำนาย} & 0.2315 
+%		& 19 & 2 
+		\\
+		\hline
+		{\selectlanguage{thai}ปรับปรุง ยาก} & 0.2035
+%		 & 17 & 11 
+		 \\
+		\hline
+		{\selectlanguage{thai}ปุ่ม หาย} & -0.5156 
+%		& 49 & 23 
+		\\
+		\hline
+		{\selectlanguage{thai}ชอบ แม่น} & 0.3926 
+%		& 142 & 14 
+		\\
+		\hline
+		{\selectlanguage{thai}สุดยอด ลอง} & 0.3926 
+%		& 145 & 12 
+		\\
+		\hline
+		{\selectlanguage{thai}แป้น รวน} & -0.3352 
+%		& 24 & 9 
+		\\
+		\hline
+		{\selectlanguage{thai}แก้ไข สี} & 0.2167 
+%		& 40 & 15 
+		\\
+		\hline
+		{\selectlanguage{thai}พิมพ์ ง่าย} & 0.5153 
+%		& 201 & 12 
+		\\
+		\hline
+		{\selectlanguage{thai}เสียง เสียดาย} & 0.4066
+%		 & 17 & 4 
+		 \\
+		\hline
+		{\selectlanguage{thai}ปรับ ขนาด ค้าง} & 0.5153 
+%		& 63 & 13 
+		\\
+		\hline
+		{\selectlanguage{thai}ปุ่ม แจ่ม ซับซ้อน} & -0.5156 
+%		& 30 & 17 
+		\\
+		\hline
+		{\selectlanguage{thai}เพิ่ม อิโมจิ} & 0.4066 
+%		& 35 & 1 
+		\\
+		\hline
+		{\selectlanguage{thai}เดา คำ} & -0.5156 
+%		& 44 & 9 
+		\\
+		\hline
+		{\selectlanguage{thai}พิมพ์ พลาด} & 0.5153 
+%		& 68 & 11 
+		\\
+		\hline
+		{\selectlanguage{thai}แป้น ใหญ่} & 0.3396 
+%		& 82 & 13 
+		\\
+		\hline
+	\end{tabular}
+\end{table}
+โดยเราได้ตรวจสอบความถูกต้องของงานวิจัยโดยให้ผู้เชี่ยวชาญประเมินทัศนคติของประโยค ซึ่งจะได้ค่าความถูกต้องตาม Table \ref{table:f-measureSenti}
+\begin{table}
+	\caption{precision, recall, f-measure and accuracy for sentiment analysis}
 	\label{table:f-measureSenti}
 	\centering
 	\begin{tabular}{|l|r|r|r|r|}
 		\hline
-		\multicolumn{1}{|c|}{Application} &
-		\multicolumn{1}{|c|}{Precision}&
-		\multicolumn{1}{|c|}{Recall}&
-		\multicolumn{1}{|c|}{F-measure} &
-		\multicolumn{1}{|c|}{Accuracy} \\
+		\multicolumn{1}{|c|}{\multirow{2}{*}{application}} &
+		\multicolumn{4}{|c|}{Sentence}\\
+		\cline{2-5}
+		\multicolumn{1}{|c|}{}&
+		\multicolumn{1}{|c|}{precision}&
+		\multicolumn{1}{|c|}{recall}&
+		\multicolumn{1}{|c|}{f-measure} &
+		\multicolumn{1}{|c|}{accuracy} \\
 		\hline
 		Man Man & 0.5028 & 0.3189 & 0.3570 & 0.6110\\
 		\hline
@@ -20,6 +119,43 @@
 		\hline
 	\end{tabular}
 \end{table}
+
+%เพิ่มเติม
+และความถูกต้องของทัศนคติของหัวข้อที่ผู้ใช้งานกล่าวถึงตาม Table\ref{table:f-measureTopic}
+\begin{table}
+	\caption{precision, recall, f-measure and accuracy for sentiment of topic}
+	\label{table:f-measureTopic}
+	\centering
+	\begin{tabular}{|l|r|r|r|r|}
+		\hline
+		\multicolumn{1}{|c|}{\multirow{2}{*}{application}} & 
+		\multicolumn{4}{|c|}{Topic} \\
+		\cline{2-5}
+		\multicolumn{1}{|c|}{} &
+		\multicolumn{1}{|c|}{precision}&
+		\multicolumn{1}{|c|}{recall}&
+		\multicolumn{1}{|c|}{f-measure} &
+		\multicolumn{1}{|c|}{accuracy} \\
+		\hline
+		Man Man & 0.7188 & 0.6538 & 0.6848 & 0.55\\
+		\hline
+		H-Tv & 0.5252 & 0.5333 & 0.5293 & 0.5\\
+		\hline
+		K-mobile & 0.2368 & 0.45 & 0.3103 & 0.45\\
+		\hline
+	\end{tabular}
+\end{table}
+
+%%%%%%%
+โดยเรายังไม่ได้ทดสอบความถูกต้องในส่วนของการหากลุ่มของหัวข้อที่ผู้ใช้งานกล่าวถึง เนื่องจากการที่เราไม่สามารถกำหนดหัวข้อที่แน่นอน จึงเป็นปัญหาให้เกิดความลำบากในการจับกลุ่มของหัวข้อ เพราะแนวคิดการจับกลุ่มหัวข้อของแต่ละคนนั้นไม่เหมือนกัน ทำให้กลุ่มของหัวข้อของแต่ละคนที่ได้ออกมาอาจจะมีบางกลุ่มที่ไม่ตรงกันเลย หรือบางกลุ่มอาจจะผสมกัน เหมือนอย่างงานวิจัยของ Gunzmam and Laalej \cite{userslikefeature} ซึ่งมีปัญหาในการจัดกลุ่มของหัวข้อเช่นกัน
+
+ดังนั้นเราจึงอนุมานว่า LDA ที่เราหาได้นั้นมีความถูกต้องในระดับหนึ่ง ซึ่งในภายภาคหน้าผู้วิจัยจะพยายามหาวิธีการวัดความถูกต้องของการจับกลุ่มหัวข้อที่ไม่แน่นอนนี้ให้ได้
+
+%%%%%%%
+
+
+%%
+
 \subsection*{Limitation}
 เนื่องจากเรายังหาวิธีที่จะใช้ในการแบ่งประโยคที่ชัดเจนยังไม่ได้จึงทำให้การแบ่งประโยคนั้นอาจยังไม่ถูกต้อง รวมถึงคำบางคำ อาจจะเป็นคำสมัยใหม่ หรือภาษาวัยรุ่น ทำให้คำเหล่านี้ไม่มีอยู่ใน corpus ที่เราใช้งาน จึงเป็นเหตุให้เราอาจไม่สามารถหาทัศนคติของคำเหล่านี้ได้
 
@@ -122,4 +258,5 @@
 %		\hline
 %	\end{tabular}
 %\end{table*}
+
 
