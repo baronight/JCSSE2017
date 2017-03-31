@@ -3,7 +3,7 @@ The goal of our work is to extract opinions and sentiments about mobile applicat
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=.8\linewidth]{Process.jpg}
+	\includegraphics[width=.6\linewidth]{Process.jpg}
 	\caption{Overview of approach}
 	\label{fig:approachFig}
 \end{figure}
@@ -125,16 +125,15 @@ Furthermore, we found that several negative sentences are assigned with positive
 	\end{tabular}
 \end{table}
 
-\subsection{Topic or Feature Extraction}
+\subsection{Topic/Aspect/Feature Extraction}
 In addition to sentiment analysis, we also want to pinpoint what topics or features users are talking about in the review. We use LDA, a topic modeling technique, to extract topics/features. We supplied only nouns, verbs, adjectives, and adverbs in all user reviews to the LDA Python tool. We specify the number of topics to be 20 because we do not know exactly how many features users are talking about in the reviews.
 
 We then choose topics with high probabilities and also choose words within the topics with high probabilities.
 
-%not finish
-
 \subsection{Summary}
+\label{Summary}
 After sentences are annotated with sentiment scores and features are extracted, we summarize the information by assigning sentiment scores to the extracted features. The assigning process is done as follows. For each word belonging in a topic, we find all the sentences containing the word and collect all their sentiment scores. The absolute maximum sentiment score is then assigned to the topic.
 
-%In addition, we also count how many sentencse with positive and negative scores for each topic so that developers can see in more details how much users like or dislike the features. 
+In addition, we also count how many sentencse with positive and negative scores for each topic so that developers can see in more details how much users like or dislike the features. 
 
 

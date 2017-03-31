@@ -1,4 +1,104 @@
-We evaluated our approach by asking one person not related our work to manually label sentiments for each sentence whether it is positive, negative, or neutral. This information is used as truth values to calculate precision, recall, and accuracy. Table~\ref{table:f-measureSenti} shows evaluation results.
+After the summary step in Subsection~\ref{Summary}, aspects/features from user reviews of "Man Man" application are discovered and assigned with sentiment scores shown in Table~\ref{table:topicManMan}
+
+\begin{table}
+	\caption{20 topics/aspects/features discovered from Man Man user reviews}
+	\label{table:topicManMan}
+	\centering
+	\begin{tabular}{|l|r|
+%			r|r|
+		}
+		\hline
+		\multicolumn{1}{|c|}{topic} 
+		& \multicolumn{1}{|c|}{sentiment} 
+%		& \multicolumn{1}{|c|}{no. of positive} 
+%		& \multicolumn{1}{|c|}{no. of negative}
+		\\
+		\hline
+		{\selectlanguage{thai}เปลี่ยน ภาษา} & 0.2770 
+%		& 35 & 9 
+		\\
+		\hline
+		{\selectlanguage{thai}พัฒนา ยอด} & 0.2666 
+%		& 47 & 6 
+		\\
+		\hline
+		sticker {\selectlanguage{thai}หน่อย ขยาย} & 0.2046 
+%		& 36 & 15 
+		\\
+		\hline
+		{\selectlanguage{thai}สะดวก สวย} & 0.3926 
+%		& 84 & 13 
+		\\
+		\hline
+		{\selectlanguage{thai}สายตา ขนาด ใหญ่} & 0.5153 
+%		& 143 & 26 
+		\\
+		\hline
+		{\selectlanguage{thai}ยกเว้น ทำนาย} & 0.2315 
+%		& 19 & 2 
+		\\
+		\hline
+		{\selectlanguage{thai}ปรับปรุง ยาก} & 0.2035
+%		 & 17 & 11 
+		 \\
+		\hline
+		{\selectlanguage{thai}ปุ่ม หาย} & -0.5156 
+%		& 49 & 23 
+		\\
+		\hline
+		{\selectlanguage{thai}ชอบ แม่น} & 0.3926 
+%		& 142 & 14 
+		\\
+		\hline
+		{\selectlanguage{thai}สุดยอด ลอง} & 0.3926 
+%		& 145 & 12 
+		\\
+		\hline
+		{\selectlanguage{thai}แป้น รวน} & -0.3352 
+%		& 24 & 9 
+		\\
+		\hline
+		{\selectlanguage{thai}แก้ไข สี} & 0.2167 
+%		& 40 & 15 
+		\\
+		\hline
+		{\selectlanguage{thai}พิมพ์ ง่าย} & 0.5153 
+%		& 201 & 12 
+		\\
+		\hline
+		{\selectlanguage{thai}เสียง เสียดาย} & 0.4066
+%		 & 17 & 4 
+		 \\
+		\hline
+		{\selectlanguage{thai}ปรับ ขนาด ค้าง} & 0.5153 
+%		& 63 & 13 
+		\\
+		\hline
+		{\selectlanguage{thai}ปุ่ม แจ่ม ซับซ้อน} & -0.5156 
+%		& 30 & 17 
+		\\
+		\hline
+		{\selectlanguage{thai}เพิ่ม อิโมจิ} & 0.4066 
+%		& 35 & 1 
+		\\
+		\hline
+		{\selectlanguage{thai}เดา คำ} & -0.5156 
+%		& 44 & 9 
+		\\
+		\hline
+		{\selectlanguage{thai}พิมพ์ พลาด} & 0.5153 
+%		& 68 & 11 
+		\\
+		\hline
+		{\selectlanguage{thai}แป้น ใหญ่} & 0.3396 
+%		& 82 & 13 
+		\\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+We evaluated our approach by asking one person not related our research to manually label sentiments for each sentence whether it is positive, negative, or neutral. This information is used as truth values to calculate precision, recall, and accuracy. Table~\ref{table:f-measureSenti} shows evaluation results.
 
 \begin{table}[h]
 	\caption{F-Measure and Accuracy for Sentiment Analysis}
@@ -21,12 +121,58 @@ We evaluated our approach by asking one person not related our work to manually 
 	\end{tabular}
 \end{table}
 
+We did not evaluate whether the LDA produced accurate topics/aspects/features. As with most unsupervised learning technique, accuracy evaluation is difficult and also subjective. Different persons may have very different points of view on how to identify topics/aspects in large amount of data. Gunzmam and Laalej's paper~\cite{userslikefeature} also mentioned difficulties in evaluating results from topic modelling technique. Since the LDA technique is widely known and used for topic modelling, we therefore make an assumption that results from LDA is accurate at some level. 
+
+However, when given aspect/topic/features, we are able to evaluate their sentiments. Table~\ref{table:f-measureTopic} shows the result of the evaluation whether or not the sentiment for each aspect/topic/feature is accurate. The same person that help label sentiments for sentences also help label sentiments for aspect/topic/feature. Remark that the person only lables the orientation of the sentiment whether it is positive, negative, or neutral, but did not label sentiment intensity or scores since it is much harder to evaluate and it is very subjective, even more subjective than sentiment orientations.
+
+\begin{table}
+	\caption{Precision, Recall, F-Measure and Accuracy for sentiment of topic}
+	\label{table:f-measureTopic}
+	\centering
+	\begin{tabular}{|l|r|r|r|r|}
+		\hline
+		\multicolumn{1}{|c|}{\multirow{2}{*}{application}} & 
+		\multicolumn{4}{|c|}{Topic} \\
+		\cline{2-5}
+		\multicolumn{1}{|c|}{} &
+		\multicolumn{1}{|c|}{precision}&
+		\multicolumn{1}{|c|}{recall}&
+		\multicolumn{1}{|c|}{f-measure} &
+		\multicolumn{1}{|c|}{accuracy} \\
+		\hline
+		Man Man & 0.7188 & 0.6538 & 0.6848 & 0.55\\
+		\hline
+		H-Tv & 0.5252 & 0.5333 & 0.5293 & 0.5\\
+		\hline
+		K-mobile & 0.2368 & 0.45 & 0.3103 & 0.45\\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+for sentence, sentiment scores are averaged ----> no more than [-1,1]
+did not take มาก into accounts.
+
+
+sentiment score for topics ---> max absolute [-1,1]
+
+
+in sentiwordnet, positive score is no more than 0.75.
+
+
+if word is written in english, no need for translation, and sentiment score can be directly retrieved.
+
+
+
 \subsection*{Limitation}
 Our work still has some limetaions. Some limitations are mentioned in Sention~\ref{Approach} such as limitation in sentence and word segmentations of information texts, slangs, and misspelled words. This leads the LEXiTRON not able to find word translation and SentiWordNet not able to find sentiment scores. In addition, some words have several meanings and LEXiTRON returns several translation. We therefore would not get precise meanings and therefore not getting precise sentiment score.
 
 For topic modelling, our work fixed a number of topics, and therefore not too automatic. It should be better if the approach can specify the number of topics dynamically to match different mobile applications. We can estimate the number of topics from a number of features listed on the mobile application websites.
 
 Ask more human to label data to ...
+
+ดังนั้นเราจึงอนุมานว่า LDA ที่เราหาได้นั้นมีความถูกต้องในระดับหนึ่ง
+ซึ่งในภายภาคหน้าผู้วิจัยจะพยายามหาวิธีการวัดความถูกต้องของการจับกลุ่มหัวข้อที่ไม่แน่นอนนี้ให้ได้
 
 
 % An example of a double column floating figure using two subfigures.
