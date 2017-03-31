@@ -58,7 +58,9 @@ We would like the entire process of analyzing raw user reviews to be automatic a
 
 
 We have collected user reviews in Google Play Store from three mobile applications:
-"{\selectlanguage{thai}แม่น แม่น}" or "Man Man" (a virtual keyboard), "H-TV" (online TV), "K-Mobile" (internet mobile banking). The user reviews collected are dated between February 2015 and August 2016. The number of user reviews collected for each application is shown in Table \ref{table:NoOfReview}. The information collected for each review includes author, title, detail, rate, and review date. Table \ref{table:review} shows examples of user reviews. A script is written to retrieve user reviews automatically from the Google Play Store website. The user reviews are then stored in a ...... database.
+"{\selectlanguage{thai}แม่น แม่น}" or "Man Man" (a virtual keyboard), "H-TV" (online TV), "K-Mobile" (internet mobile banking). The user reviews collected are dated between February 2015 and August 2016. The number of user reviews collected for each application is shown in Table \ref{table:NoOfReview}. The information collected for each review includes author, title, detail, rate, and review date. Table \ref{table:review} shows examples of user reviews. 
+
+The collection process is done automatically using a script written in JavaScript to retrieve user reviews automatically from the Google Play Store website. The user reviews are then stored in a database for further analysis.
 
 \subsection{Prepossessing}
 
@@ -75,7 +77,7 @@ To ease the problem, LexTo allows us to add new vocabulary into the tool. Howeve
 
 \subsubsection{POS tagger}
 
-We use the RDRPOStagger tool\cite{RDRPOSTagger} with the ORCHID corpus\cite{ORCHID} for POS tagging. Since some slang and mispelled words are segmented incorrectly, the POS tagger tags those words as "unknown". In the sentiment analysis and topic modeling steps, words tagged with nouns, verbs, and adjective/adverb are used to analyzed. In addition, since one word can be tagged with more than one POS, this POS annotation is used to identify various meanings of one word.
+We use the RDRPOStagger tool\cite{RDRPOSTagger} with the ORCHID corpus\cite{ORCHID} for POS tagging. Since some slang and mispelled words are segmented incorrectly, the POS tagger tags those words as "unknown". In the sentiment analysis and topic modeling steps, only words tagged with nouns, verbs, and adjective/adverb are used. In addition, since one word can be tagged with more than one POS, this POS annotation is used to identify various meanings of one word. For example, the word "{\selectlanguage{thai}ฉัน}" has two meanings with different parts of speech. As a noun, it means "I". As a verb, it means "eat".
 
 \subsection{Sentiment Analysis}
 Once words in user reviews are tagged with parts of speech, sentiments in these reviews can be analyzed. Our work applies the lexicon-based approach. However, there is no resource that annotates each Thai word with sentiment scores. Therefore, the English SentiWordNet \cite{SentiWordNet} is used in combination with an electronic Thai-English dictionary called LEXiTRON \cite{LEXiTRON} developed by NECTEC.
@@ -85,10 +87,7 @@ To find score for each Thai word, our script automatically looks up in the LEXiT
 Besides assigning sentiment scores straightforwardly, further analysis is needed. For example, 
 a word that is preceded with the word {\selectlanguage{thai}ไม่}, which means "no" or "not", will have its sentiment score flipped. In addition, some Thai words have more than one associated English words where these English words also have different sentiment scores. In this case, all sentiment scores are  averaged and then assigned to the Thai word. When sentiment scores are assigned to all nouns, verbs, adjectives, and adverbs in a sentence, the sentiment score for a sentence is calculated by averaging these sentiment scores.
 
-Furthermore, we found that several negative sentences are assigned with positive score. Upon closer looks, we found a pattern in these sentences where there is a word {\selectlanguage{thai}ชอบ} preceding with negative verb such as {\selectlanguage{thai}แอพชอบล่มบ่อย}, which means the application often crashes. Since the word {\selectlanguage{thai}ชอบ} in Thai can mean "like" or if used in front of a verb it also means "often". Since the POS tool tags {\selectlanguage{thai}ชอบ} as a verb and the sentiment score comes out with a high positive number, this kind of sentences are therefore incorrectly assigned with positive numbers. We therefore eliminated the word {\selectlanguage{thai}ชอบ} that precedes a verb.
-
-
-{\selectlanguage{thai}ชอบ} ..........GIVE EXAMPLE........
+Furthermore, we found that several negative sentences are assigned with positive score. Upon closer look, we found a pattern in these sentences where there is a word {\selectlanguage{thai}ชอบ} preceding with a negative verb such as "{\selectlanguage{thai}ชอบค้างบ่อยๆ}", which means the application often freezes. The word {\selectlanguage{thai}ชอบ} in Thai means "like", and if used in front of a verb, it also means "often". Since the POS tool tags {\selectlanguage{thai}ชอบ} as a verb which associates with the "like" meaning, its sentiment score is returned with a high positive number. This types of sentences are therefore incorrectly assigned with a positive sentiment. Hence, we eliminate the word {\selectlanguage{thai}ชอบ} that precedes a verb to increase accuracy.
 
 
 \begin{table}[h]
