@@ -1,102 +1,110 @@
-After the summary step in Subsection~\ref{Summary}, aspects/features from user reviews of "Man Man" application are discovered and assigned with sentiment scores shown in Table~\ref{table:topicManMan}
+After the summary step in Subsection~\ref{Summary}, aspects/features from user reviews of "Man Man" application are discovered and assigned with sentiment scores shown in Table~\ref{table:topicManMan}. 
+
+Figure~\ref{fig:graphmanman} helps visualize and interpret the results in a bar graph format. The sentiment scores for each topic are between [-1,1] where negative number means negative sentiment and vice versa. The higher the number means higher degree of negativity or positivity. Please note that in SentiWordNet the highest positive and lowest negative sentiment scores are 0.75 and -0.75, respectively. Therefore, the sentiment score of 0.5153 can be considered very positive and -0.5156 can be considered very negative. 
 
 \begin{table}
 	\caption{20 topics/aspects/features discovered from Man Man user reviews}
 	\label{table:topicManMan}
 	\centering
 	\begin{tabular}{|l|r|
-%			r|r|
+			r|r|
 		}
 		\hline
 		\multicolumn{1}{|c|}{topic} 
 		& \multicolumn{1}{|c|}{sentiment} 
-%		& \multicolumn{1}{|c|}{no. of positive} 
-%		& \multicolumn{1}{|c|}{no. of negative}
+		& \multicolumn{1}{|c|}{no. of positive} 
+		& \multicolumn{1}{|c|}{no. of negative}
 		\\
 		\hline
 		{\selectlanguage{thai}เปลี่ยน ภาษา} & 0.2770 
-%		& 35 & 9 
+		& 35 & 9 
 		\\
 		\hline
 		{\selectlanguage{thai}พัฒนา ยอด} & 0.2666 
-%		& 47 & 6 
+		& 47 & 6 
 		\\
 		\hline
 		sticker {\selectlanguage{thai}หน่อย ขยาย} & 0.2046 
-%		& 36 & 15 
+		& 36 & 15 
 		\\
 		\hline
 		{\selectlanguage{thai}สะดวก สวย} & 0.3926 
-%		& 84 & 13 
+		& 84 & 13 
 		\\
 		\hline
 		{\selectlanguage{thai}สายตา ขนาด ใหญ่} & 0.5153 
-%		& 143 & 26 
+		& 143 & 26 
 		\\
 		\hline
 		{\selectlanguage{thai}ยกเว้น ทำนาย} & 0.2315 
-%		& 19 & 2 
+		& 19 & 2 
 		\\
 		\hline
 		{\selectlanguage{thai}ปรับปรุง ยาก} & 0.2035
-%		 & 17 & 11 
+		 & 17 & 11 
 		 \\
 		\hline
 		{\selectlanguage{thai}ปุ่ม หาย} & -0.5156 
-%		& 49 & 23 
+		& 49 & 23 
 		\\
 		\hline
 		{\selectlanguage{thai}ชอบ แม่น} & 0.3926 
-%		& 142 & 14 
+		& 142 & 14 
 		\\
 		\hline
 		{\selectlanguage{thai}สุดยอด ลอง} & 0.3926 
-%		& 145 & 12 
+		& 145 & 12 
 		\\
 		\hline
 		{\selectlanguage{thai}แป้น รวน} & -0.3352 
-%		& 24 & 9 
+		& 24 & 9 
 		\\
 		\hline
 		{\selectlanguage{thai}แก้ไข สี} & 0.2167 
-%		& 40 & 15 
+		& 40 & 15 
 		\\
 		\hline
 		{\selectlanguage{thai}พิมพ์ ง่าย} & 0.5153 
-%		& 201 & 12 
+		& 201 & 12 
 		\\
 		\hline
 		{\selectlanguage{thai}เสียง เสียดาย} & 0.4066
-%		 & 17 & 4 
+		 & 17 & 4 
 		 \\
 		\hline
 		{\selectlanguage{thai}ปรับ ขนาด ค้าง} & 0.5153 
-%		& 63 & 13 
+		& 63 & 13 
 		\\
 		\hline
 		{\selectlanguage{thai}ปุ่ม แจ่ม ซับซ้อน} & -0.5156 
-%		& 30 & 17 
+		& 30 & 17 
 		\\
 		\hline
 		{\selectlanguage{thai}เพิ่ม อิโมจิ} & 0.4066 
-%		& 35 & 1 
+		& 35 & 1 
 		\\
 		\hline
 		{\selectlanguage{thai}เดา คำ} & -0.5156 
-%		& 44 & 9 
+		& 44 & 9 
 		\\
 		\hline
 		{\selectlanguage{thai}พิมพ์ พลาด} & 0.5153 
-%		& 68 & 11 
+		& 68 & 11 
 		\\
 		\hline
 		{\selectlanguage{thai}แป้น ใหญ่} & 0.3396 
-%		& 82 & 13 
+		& 82 & 13 
 		\\
 		\hline
 	\end{tabular}
 \end{table}
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\linewidth]{graphmanman}
+	\caption{sentiment score of topic from man man user reviews}
+	\label{fig:graphmanman}
+\end{figure}
 
 We evaluated our approach by asking one person not related our research to manually label sentiments for each sentence whether it is positive, negative, or neutral. This information is used as truth values to calculate precision, recall, and accuracy. Table~\ref{table:f-measureSenti} shows evaluation results.
 
@@ -149,30 +157,16 @@ However, when given aspect/topic/features, we are able to evaluate their sentime
 	\end{tabular}
 \end{table}
 
+\subsection*{Limitation and Possible Future Works}
+Our work still has some limitations. Some are mentioned in Section~\ref{Approach} such as limitations in sentence and word segmentations of informal texts, slangs, and misspelled words. This leads LEXiTRON and  SentiWordNet not being able to find word translations and sentiment scores. In addition, some words have several meanings, and LEXiTRON returns several translations. We therefore do not get precise meanings nor precise sentiment scores. Possible future work is to create a Thai sentiment lexical resource to help researchers perform sentiment analysis easier and more accurate.
 
-for sentence, sentiment scores are averaged ----> no more than [-1,1]
-did not take มาก into accounts.
+For topic modelling, our work fixed a number of topics, and therefore not flexible or dynamic enough. It should be better if the number is configurable or determined dynamically from additional information extracted from the mobile application such as a number of features.
 
+The evaluation process is still not too convincing since we used only one person to create truth values. Possible future work is to get more persons to label data.
 
-sentiment score for topics ---> max absolute [-1,1]
+We can also make it as a tool where users can specify a name of mobile application with dates to be analyzed and the tool would display analysis results.
 
-
-in sentiwordnet, positive score is no more than 0.75.
-
-
-if word is written in english, no need for translation, and sentiment score can be directly retrieved.
-
-
-
-\subsection*{Limitation}
-Our work still has some limetaions. Some limitations are mentioned in Sention~\ref{Approach} such as limitation in sentence and word segmentations of information texts, slangs, and misspelled words. This leads the LEXiTRON not able to find word translation and SentiWordNet not able to find sentiment scores. In addition, some words have several meanings and LEXiTRON returns several translation. We therefore would not get precise meanings and therefore not getting precise sentiment score.
-
-For topic modelling, our work fixed a number of topics, and therefore not too automatic. It should be better if the approach can specify the number of topics dynamically to match different mobile applications. We can estimate the number of topics from a number of features listed on the mobile application websites.
-
-Ask more human to label data to ...
-
-ดังนั้นเราจึงอนุมานว่า LDA ที่เราหาได้นั้นมีความถูกต้องในระดับหนึ่ง
-ซึ่งในภายภาคหน้าผู้วิจัยจะพยายามหาวิธีการวัดความถูกต้องของการจับกลุ่มหัวข้อที่ไม่แน่นอนนี้ให้ได้
+%ซึ่งในภายภาคหน้าผู้วิจัยจะพยายามหาวิธีการวัดความถูกต้องของการจับกลุ่มหัวข้อที่ไม่แน่นอนนี้ให้ได้
 
 
 % An example of a double column floating figure using two subfigures.
