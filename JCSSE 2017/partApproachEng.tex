@@ -1,14 +1,14 @@
 
-The goal of our work is to extract opinions and sentiments about mobile applications from user reviews written in Thai. The work hopes to help Thai users assesss mobile application without needing to read all reviews and to also help Thai developers pinpoint where they can improve their software products. To achieve the goal, we employ 5 steps as follows: 1. Data Collection 2. Prepossessing 3. Sentiment Analysis 4. Topic Extraction 5. Summary as shown in Figure \ref{fig:approachFig}. 
+The goal of our work is to extract opinions and sentiments about mobile applications from user reviews written in Thai. The work hopes to help Thai users assesss mobile applications without needing to read all reviews and to also help Thai developers pinpoint where they can improve their software products. To achieve the goal, we employ 5 steps, shown in Figure \ref{fig:approachFig}, as follows: 1. Data Collection 2. Prepossessing 3. Sentiment Analysis 4. Topic Extraction 5. Summary. 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=.5\linewidth]{Process.jpg}
-	\caption{Overview of approach}
+	\caption{Overview of our approach}
 	\label{fig:approachFig}
 \end{figure}
 
-We would like the entire process to be automatic and accurate as much as possible, but there are several limitations. To process raw user reviews, most of the process is done automatically but some parts need manual intervention. The following subsections describe these five steps and will also state whether the step is done automatically or manually. We also need to make some assumptions to make the process possible. For example, we assume that one sentence has one sentiment.
+We would like the entire process to be as automatic and accurate as possible, but there are several limitations. To process raw user reviews, most of the process can be done automatically but some steps need manual intervention. Following subsections describes these five steps and also states whether the step is done automatically or manually. We also make an assumption that one sentence has one sentiment to make the process possible. 
 
 \subsection{Data Collection}
 
@@ -20,11 +20,11 @@ We would like the entire process to be automatic and accurate as much as possibl
 		\hline
 		\textbf{Application} & \multicolumn{1}{|c|}{\textbf{No. of Reviews}} \\
 		\hline
-		Man Man & 1279\\
+		Man Man & 1,279\\
 		\hline
 		H-TV & 691\\
 		\hline
-		K-Mobile & 1055\\
+		K-Mobile & 1,055\\
 		\hline
 	\end{tabular}
 \end{table}
@@ -58,7 +58,7 @@ We would like the entire process to be automatic and accurate as much as possibl
 
 
 We have collected user reviews in Google Play Store from three mobile applications:
-"{\selectlanguage{thai}แม่น แม่น}" or "Man Man" (a virtual keyboard), "H-TV" (online TV), "K-Mobile" (internet mobile banking). The user reviews collected are dated between February 2015 and August 2016. The number of user reviews collected for each application is shown in Table \ref{table:NoOfReview}. The information collected for each review includes author, title, detail, rate, and review date. Table \ref{table:review} shows examples of user reviews. 
+"{\selectlanguage{thai}แม่น แม่น}" or "Man Man" (a virtual keyboard), "H-TV" (online TV), "K-Mobile" (internet mobile banking). The user reviews collected are dated between February 2015 and August 2016. The number of user reviews for each application is shown in Table \ref{table:NoOfReview}. The information collected for each review includes author, title, detail, rate, and review date. Table \ref{table:review} shows examples of user reviews. 
 
 The collection process is done automatically using a script written in JavaScript to retrieve user reviews automatically from the Google Play Store website. The user reviews are then stored in a database for further analysis.
 
@@ -66,28 +66,32 @@ The collection process is done automatically using a script written in JavaScrip
 
 After user reviews have been collected, the next step is to perform sentence segmentation, word segmentation and part-of-speech tagging. 
 
-\subsubsection{sentence extraction}
-One user review can contain several sentences expressing opinions about various aspects or features. 
-Since we make an assumption that one sentence has one sentiment, we need to distinguish different sentences in the review. Thai writing however makes it difficult because there is no formal sentence boundary like a period or a question mark in Engish writing. Spaces in Thai language can mark the end of a sentence or the end of a clause. Therefore, we cannot simply use spaces to indicate the end of sentences. Although there are several researches focusing on breaking Thai text into sentences, there are no tools that can easily be used. We therefore perform sentence segmentation manually. Once a tool is available, it can be applied to make this pre-processing step easier. 
+\subsubsection{sentence segmentation}
+One user review can contain several sentences expressing opinions about various aspects. 
+Since we make an assumption that one sentence has one sentiment, we need to break reviews into a list of single sentences. Thai writing however makes it difficult because there is no formal sentence boundary like a period or a question mark in Engish. Spaces in Thai can mark the end of a sentence or the end of a clause. Therefore, we cannot simply use spaces to indicate the end of sentences. Although there are several researches focusing on breaking Thai text into sentences, there are no tools that can easily be used. We therefore perform sentence segmentation manually. Once a tool is available, it can be applied to make this pre-processing step easier. 
 
 \subsubsection{word segmentation}
-As mentioned in Section \ref{Background}, we used LexTo\cite{LexTo} from NECTEC to perform word segmentation. LexTo can segment words very well if words are spelled correctly. However, processing raw user reviews is difficult because of the informal language and slangs used in the reviews. There are also many spelling errors, either accidentally or intentionally to emphasize the meaning such as "{\selectlanguage{thai}มากกกกกก}", causing the tool to segment words incorrectly. 
+As mentioned in Section \ref{Background}, we use LexTo\cite{LexTo} from NECTEC to perform word segmentation. LexTo can segment words very well if words are spelled correctly. However, processing raw user reviews is difficult because of the informal language and slangs used in the reviews. There are also many spelling errors, either accidentally or intentionally to emphasize the meaning such as "{\selectlanguage{thai}มากกกกกก}", causing the tool to segment words incorrectly. 
 
-To ease the problem, LexTo allows us to add new vocabulary into the tool. However, with too many slangs including new ones and too many variations of misspelled words, it is not practical to add all of these into the tool. Today, more and more texts to be analyzed are written informally. It is more practical to find an automatic approach to deal with this problem rather than manually correctly these words so that the word segmentation tool can perform entirely correctly. In our work, we have added some common slangs and common misspelled into the tool to increase accuracy but are not able to cover all slangs and mispelled words. This step is therefore more automatic with the cost of less accuracy.
+%To ease the problem, LexTo allows us to add new vocabulary into the tool. However, with too many slangs including new ones and too many variations of misspelled words, it is not practical to add all of these into the tool. Today, more and more texts to be analyzed are written informally. It is more practical to find an automatic approach to deal with this problem rather than manually correctly these words so that the word segmentation tool can perform entirely correctly. In our work, we have added some common slangs and common misspelled into the tool to increase accuracy but are not able to cover all slangs and mispelled words. This step is therefore more automatic with the cost of less accuracy.
+
+Today, more and more texts are written informally. It is not practical to manually correct these words so that the word segmentation tool can perform correctly. In our work, we want this step to be automatic and therefore, we sacrifice accuracy. 
+
+%we have added some common slangs and common misspelled into the tool to increase accuracy but are not able to cover all slangs and mispelled words. This step is therefore more automatic with the cost of less accuracy.
 
 \subsubsection{POS tagger}
 
-We use the RDRPOStagger tool\cite{RDRPOSTagger} with the ORCHID corpus\cite{ORCHID} for POS tagging. Since some slang and mispelled words are segmented incorrectly, the POS tagger tags those words as "unknown". In the sentiment analysis and topic modeling steps, only words tagged with nouns, verbs, and adjective/adverb are used. In addition, since one word can be tagged with more than one POS, this POS annotation is used to identify various meanings of one word. For example, the word "{\selectlanguage{thai}ฉัน}" has two meanings with different parts of speech. As a noun, it means "I". As a verb, it means "eat".
+We use the RDRPOStagger tool\cite{RDRPOSTagger} with the ORCHID corpus\cite{ORCHID} for POS tagging. Since some slang and misspelled words are segmented incorrectly, the POS tagger tags those words as "unknown". In the sentiment analysis and topic modeling steps, only words tagged with nouns, verbs, and adjective/adverb are used. In addition, since one word can be tagged with more than one POS, this POS annotation is used to identify various meanings of one word. For example, the word "{\selectlanguage{thai}ฉัน}" has two meanings with different parts of speech. As a noun, it means "I". As a verb, it means "eat".
 
 \subsection{Sentiment Analysis}
-Once words in user reviews are tagged with parts of speech, sentiments in these reviews can be analyzed. Our work applies the lexicon-based approach. However, there is no resource that annotates each Thai word with sentiment scores. Therefore, the English SentiWordNet \cite{SentiWordNet} is used in combination with an electronic Thai-English dictionary called LEXiTRON \cite{LEXiTRON} developed by NECTEC. Note that some words in the reviews are already written in English. For these English words, their sentiment scores can be retrieved from SentiWordNet without using LEXiTRON.
+Once words in user reviews are tagged with POS, sentiments in these reviews can be analyzed. Our work applies the lexicon-based approach. However, there is no resource that annotates each Thai word with sentiment scores. Therefore, the English SentiWordNet \cite{SentiWordNet} is used in combination with an electronic Thai-English dictionary called LEXiTRON \cite{LEXiTRON} developed by NECTEC. Note that some words in the reviews are already written in English. For these English words, their sentiment scores can be retrieved from SentiWordNet directly without using LEXiTRON.
 
-To find score for each Thai word, our script automatically looks up in the LEXiTRON dictionary to retrieve its English word with the same part-of-speech tag. The next step is to look for sentiment score in SentiWordNet for the English word with the same POS. The sentiment score is between [-1,1] where negative number means negative sentiment and vice versa. Also, the higher the number means higher degree of negativity or positivity. Table \ref{table:Top10sentiword} shows examples of sentiment scores for words found in the user reviews from Man Man application. 
+To find score for each Thai word, our script automatically looks up in the LEXiTRON dictionary to retrieve its English translation with the same POS tag. The next step is to look for sentiment score in SentiWordNet for the English word with the same POS. The sentiment score is between [-1,1] where negative number means negative sentiment and vice versa. Also, the higher the number means higher degree of negativity or positivity. Table \ref{table:Top10sentiword} shows examples of sentiment scores for words found in the user reviews from Man Man application. 
 
-Besides assigning sentiment scores straightforwardly, further analysis is needed. For example, 
-a word that is preceded with the word {\selectlanguage{thai}ไม่}, which means "no" or "not", will have its sentiment score flipped. In addition, some Thai words have more than one associated English words where these English words also have different sentiment scores. In this case, all sentiment scores are  averaged and then assigned to the Thai word. When sentiment scores are assigned to all nouns, verbs, adjectives, and adverbs in a sentence, the sentiment score for a sentence is calculated by averaging these sentiment scores.
+Besides assigning sentiment scores, further analysis is also needed. For example, 
+a word that is preceded with the word {\selectlanguage{thai}ไม่}, which means "no" or "not", will have its sentiment score flipped. In addition, some Thai words have more than one associated English translations which have different sentiment scores. In this case, all sentiment scores from all translations are averaged and then assigned to the Thai word. When sentiment scores are assigned to all nouns, verbs, adjectives, and adverbs in a sentence, the sentiment score for a sentence is calculated by averaging these sentiment scores.
 
-Furthermore, we found that several negative sentences are assigned with positive score. Upon closer look, we found a pattern in these sentences where there is a word {\selectlanguage{thai}ชอบ} preceding with a negative verb such as "{\selectlanguage{thai}ชอบค้างบ่อยๆ}", which means the application often freezes. The word {\selectlanguage{thai}ชอบ} in Thai means "like", and if used in front of a verb, it also means "often". Since the POS tool tags {\selectlanguage{thai}ชอบ} as a verb which associates with the "like" meaning, its sentiment score is returned with a high positive number. This type of sentences is therefore incorrectly assigned with positive sentiment. Hence, we eliminate the word {\selectlanguage{thai}ชอบ} that precedes a verb to increase accuracy.
+Furthermore, we find that several negative sentences are assigned with positive score. Upon closer look, we find a pattern in these sentences where there is a word {\selectlanguage{thai}ชอบ} preceding with a negative verb such as "{\selectlanguage{thai}ชอบค้างบ่อยๆ}", which means the application often freezes. The word {\selectlanguage{thai}ชอบ} in Thai means "like", and if used in front of a verb, it also means "often". Since the POS tool tags {\selectlanguage{thai}ชอบ} as a verb which associates with the "like" meaning, its sentiment score is returned with a high positive number. This type of sentences is therefore incorrectly assigned with positive sentiment. Hence, we eliminate the word {\selectlanguage{thai}ชอบ} that precedes a verb to increase accuracy.
 
 
 \begin{table}[h]
@@ -125,16 +129,16 @@ Furthermore, we found that several negative sentences are assigned with positive
 	\end{tabular}
 \end{table}
 
-\subsection{Topic/Aspect/Feature Extraction}
-In addition to sentiment analysis, we also want to pinpoint what aspects or features users are talking about in the reviews. We use LDA, a topic modeling technique, to extract topics/aspects/features. We supplied only nouns, verbs, adjectives, and adverbs in all user reviews to the LDA Python tool. 
+\subsection{Topic/Aspect Extraction}
+In addition to sentiment analysis, we also want to pinpoint what aspects users are talking about in the reviews. We use LDA, a topic modeling technique, to extract topics/aspects. We supply only nouns, verbs, adjectives, and adverbs in all user reviews to the LDA Python tool. 
 
-When using the LDA technique, a number of topics must be specified. Since we do not know exactly how many aspects users are talking about in the reviews, we have experimented on different numbers of topics ranging from 10, 11, ..., 20. We found that main topics stay put when increasing the number of topics and as the number of topics gets higher, the more refined topics seem to be. We then choose the number of topics to be 20 so as not too few or too many to comprehend the information. To make this process more flexible, we can make this number of topics configurable.
+When using the LDA technique, a number of topics must be specified. Since we do not know exactly how many aspects users are talking about in the reviews, we have experimented on different numbers of topics ranging from 10, 11, ..., 20. We find that main topics stay put when increasing the number of topics and as the number of topics gets higher, the more refined topics seem to be. We then choose the number of topics to be 20 so that it is not too few nor too many to comprehend the information. To make this process more flexible, we can make this number of topics configurable.
 
-After running LDA, for each topic, several words and associated probabilities that the words belong that topic are returned. LDA does not return the "name" of the topic itself. Therefore, to interpret the result of LDA, we manually choose a few words with high probabilities as the name of the topic so that users and developers can easily understand the results.
+After running LDA, for each topic, several words and associated probabilities that the words belong that topic are returned. LDA does not return the "name" of the topic. Thus, to interpret the LDA result, we manually choose a few words with high probabilities as the name of the topic/aspect so that users and developers can easily understand results.
 
 \subsection{Summary}
 \label{Summary}
-After sentences are annotated with sentiment scores and features are extracted, we summarize the information by assigning sentiment scores to the extracted features. The assigning process is done as follows. For each word belonging in a topic, we find all the sentences containing the word and collect all their sentiment scores. The absolute maximum sentiment score is then assigned to the topic.
+After sentences are annotated with sentiment scores and aspects are extracted, we summarize the information by assigning sentiment scores to the extracted aspects. The assigning process is done as follows. For each word belonging in a topic, we find all the sentences containing the word and collect all their sentiment scores. The absolute maximum sentiment score is then assigned to the topic.
 
 In addition, we also count how many sentences with positive and negative sentiments for each topic so that developers can see in more details how much users like or dislike the aspects. 
 
