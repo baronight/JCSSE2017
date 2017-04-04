@@ -1,8 +1,8 @@
-After the summary step in Subsection~\ref{Summary}, aspects from user reviews of "Man Man" application are discovered and assigned with sentiment scores shown in Table~\ref{table:topicManMan}. Since spaces are limited, we do not present aspects and sentiments from H-TV and K-Mobile applications here.
+Table~\ref{table:topicManMan} displays aspects and sentiments after analyzing user reviews using our approach. Due to space limit, the table only shows results from "Man Man" application. In the table, the number of positive and negative sentences are also shown to give developers a sense of how often aspects were mentioned in user reviews. Figure~\ref{fig:graphmanman} visualizes the results from Table~\ref{table:topicManMan} with a graph and sorts aspects by sentiment scores. 
 
-Figure~\ref{fig:graphmanman} helps visualize and interpret the results in a bar graph format. The sentiment scores for each topic are between [-1,1] where negative number means negative sentiment and vice versa. The higher the number means higher degree of negativity or positivity. Note that in SentiWordNet the highest positive and lowest negative sentiment scores are 0.75 and -0.75, respectively. Hence, the sentiment score of 0.5153 and -0.5156 can be considered very positive and very negative. 
+The sentiment scores shown in Table~\ref{table:topicManMan} has the highest positive and negative scores of 0.5153 and -0.5156, respectively. Upon examining SentiWordNet, we find that highest \textit{Pos} and \textit{Neg} scores are both 0.75 since the \textit{Obj} score is always non-zero. Since we use averages and absolute maximums when assigning scores to words and sentences, resulting sentiment scores for aspects should be in the range of [-0.75,0.75]. Thus, we can categorize the resulting scores to \textit{low}, \textit{medium}, \textit{high} when absolute scores are [0,0.25), [0.25, 0.5), [0.5,0.75], respectively. Hence, the sentiment score of 0.5153 and -0.5156 in Table~\ref{table:topicManMan} can be considered high positive and high negative. 
 
-\begin{table}
+\begin{table}[h]
 	\caption{20 topics/aspects discovered from Man Man user reviews}
 	\label{table:topicManMan}
 	\centering
@@ -10,10 +10,10 @@ Figure~\ref{fig:graphmanman} helps visualize and interpret the results in a bar 
 			r|r|
 		}
 		\hline
-		\multicolumn{1}{|c|}{\textbf{Topic}} 
+		\multicolumn{1}{|c|}{\textbf{Topic/Aspect}} 
 		& \multicolumn{1}{|c|}{\textbf{Sentiment}}
-		& \multicolumn{1}{|c|}{\textbf{No. of Positive}}
-		& \multicolumn{1}{|c|}{\textbf{No. of Negative}}
+		& \multicolumn{1}{|c|}{\textbf{\# Pos. Sentences}}
+		& \multicolumn{1}{|c|}{\textbf{\# Neg. Sentences}}
 		\\
 		\hline
 		{\selectlanguage{thai}เปลี่ยน ภาษา} & 0.2770 
@@ -102,35 +102,33 @@ Figure~\ref{fig:graphmanman} helps visualize and interpret the results in a bar 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\linewidth]{graphmanman}
-	\caption{sentiment score of topic from man man user reviews}
+	\caption{Sentiment scores for topics/aspects from Man Man user reviews}
 	\label{fig:graphmanman}
 \end{figure}
 
-We evaluated our approach by asking one person not related our research to manually label sentiments whether a sentence is positive, negative, or neutral. This information is used as truth values to calculate precision, recall, and accuracy. Table~\ref{table:f-measureSenti} shows evaluation results of sentiment analysis on a sentence level.
+%\begin{table}[h]
+%	\caption{Evaluation results for sentence-level sentiments}
+%	\label{table:f-measureSenti}
+%	\centering
+%	\begin{tabular}{|l|r|r|r|r|}
+%		\hline
+%		\multicolumn{1}{|c|}{\textbf{Application}} &
+%		\multicolumn{1}{|c|}{\textbf{Precision}} &
+%		\multicolumn{1}{|c|}{\textbf{Recall}} &
+%		\multicolumn{1}{|c|}{\textbf{F-Measure}} &
+%		\multicolumn{1}{|c|}{\textbf{Accuracy}} \\
+%		\hline
+%		Man Man & 0.5028 & 0.3189 & 0.3570 & 0.6110\\
+%		\hline
+%		H-TV & 0.5208 & 0.2889 & 0.3366 & 0.4837 \\
+%		\hline
+%		K-Mobile & 0.4535 & 0.2810 & 0.3240 & 0.5153 \\
+%		\hline
+%	\end{tabular}
+%\end{table}
 
-\begin{table}[h]
-	\caption{Evaluation results for sentence-level sentiments}
-	\label{table:f-measureSenti}
-	\centering
-	\begin{tabular}{|l|r|r|r|r|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Application}} &
-		\multicolumn{1}{|c|}{\textbf{Precision}} &
-		\multicolumn{1}{|c|}{\textbf{Recall}} &
-		\multicolumn{1}{|c|}{\textbf{F-Measure}} &
-		\multicolumn{1}{|c|}{\textbf{Accuracy}} \\
-		\hline
-		Man Man & 0.5028 & 0.3189 & 0.3570 & 0.6110\\
-		\hline
-		H-TV & 0.5208 & 0.2889 & 0.3366 & 0.4837 \\
-		\hline
-		K-Mobile & 0.4535 & 0.2810 & 0.3240 & 0.5153 \\
-		\hline
-	\end{tabular}
-\end{table}
-
-\begin{table}[h]
-	\caption{Evaluation results for topic-level sentiments}
+\begin{table}[!htbp]
+	\caption{Evaluation results for sentiment analysis of extracted aspects}
 	\label{table:f-measureTopic}
 	\centering
 	\begin{tabular}{|l|r|r|r|r|}
@@ -149,30 +147,23 @@ We evaluated our approach by asking one person not related our research to manua
 		\hline
 		H-TV & 0.5252 & 0.5333 & 0.5293 & 0.5\\
 		\hline
-		K-Mobile & 0.2368 & 0.45 & 0.3103 & 0.45\\
-		\hline
+%		K-Mobile & 0.2368 & 0.45 & 0.3103 & 0.45\\
+%		\hline
 	\end{tabular}
 \end{table}
 
+%We evaluated our approach by asking one person not related our research to manually label sentiments whether a sentence is positive, negative, or neutral. This information is used as truth values to calculate precision, recall, and accuracy. Table~\ref{table:f-measureSenti} shows evaluation results of sentiment analysis on a sentence level.
 
-We did not evaluate whether the LDA produced accurate topics/aspects. For topic modeling, accuracy evaluation is difficult and very subjective. Different persons may have very different points of view on how to identify topics/aspects in large amount of data. Gunzmam and Laalej's paper~\cite{userslikefeature} also mentioned this difficulties in evaluating results from topic modeling technique. Since the LDA technique is widely known and used for topic modeling, we therefore make an assumption that results from LDA is accurate at some level. 
+We evaluated our approach by calculating precision, recall, F-measure, and accuracy using truth values from data labeled manually by one person not related to our research. To manually label data, the person was given aspects/topics generated from LDA in the topic modeling step and then labeled each aspect/topic with either positive or negative sentiment. Sentiment scores are not evaluated since it is highly subjective and can be difficult to analyze accuracy. Table~\ref{table:f-measureTopic} shows the evaluation results. The average F-measure from both applications is 0.6071. 
 
-However, when given aspects/topics, we are able to evaluate their sentiments. Table~\ref{table:f-measureTopic} shows the result of the evaluation whether or not the sentiment for each aspect/topic is accurate. The same person that helped label sentiments for sentences also helped label sentiments for aspect/topic. Note that the person only labeled the polarity of the sentiment whether it is positive or negative, but did not label sentiment scores since it is hightly subjective and therefore much harder to evaluate than sentiment polarity.
-
-
-The evaluation result for sentence-level sentiments and topic-level sentiments 
-
+We have not evaluated whether the LDA produced accurate topics/aspects. For topic modeling, accuracy evaluation is very subjective and time-consuming. Different persons may have very different points of view on how to identify topics/aspects in large amount of data.  Since the LDA technique is widely known and used for topic modeling, we assume for now that results from LDA is acceptably accurate. Future work can be done to evaluate this step using similar human-intensive process as in Gunzmam and Laalej's work~\cite{userslikefeature}.
 
 \subsection*{Limitation and Possible Future Works}
-Our work still has some limitations. Some are mentioned in Section~\ref{Approach} such as limitations in sentence and word segmentations of informal texts, slangs, and misspelled words. This leads LEXiTRON and  SentiWordNet not being able to find word translations and sentiment scores. In addition, some words have several meanings, and LEXiTRON returns several translations. We therefore do not get precise meanings nor precise sentiment scores. Possible future work is to create a Thai sentiment lexical resource to help researchers perform sentiment analysis easier and more accurate.
+Our work still has some limitations such as limitations in word segmentations of informal texts, slangs, and misspelled words. This causes LEXiTRON and SentiWordNet not being able to find translations nor sentiment scores. Moreover, some words have several meanings, and LEXiTRON returns several translations. Thus, we do not get precise meanings nor precise sentiment scores. Possible future work is to create a Thai sentiment lexical resource to help Thai researchers perform sentiment analysis easier and more accurate.
 
-For topic modeling, our work fixed a number of topics, and therefore not flexible or dynamic enough. It should be better if the number is configurable or determined dynamically from additional information extracted from the mobile application such as a list of features or an application size.
+For topic modeling, our work fixes a number of topics and therefore are not flexible or dynamic enough. For future work, we can allow the number to be configurable or determined dynamically from additional information extracted from applications such as a list of features or application size.
 
-The evaluation process is still not too convincing since only one person helps create truth values. We will ask more persons to label data as our future work.
-
-We can also make the approach as a tool where users can specify a name of mobile application with dates to be analyzed and the tool would display analysis results.
-
-%ซึ่งในภายภาคหน้าผู้วิจัยจะพยายามหาวิธีการวัดความถูกต้องของการจับกลุ่มหัวข้อที่ไม่แน่นอนนี้ให้ได้
+The evaluation process is still not ideal since only one person creates truth values. We will ask more persons to label data as our future work. More mobile applications can also be analyzed to expand our case studies. We can also make the approach into a tool where users specify a name of a mobile application and let the tool analyze and display results.
 
 
 % An example of a double column floating figure using two subfigures.
