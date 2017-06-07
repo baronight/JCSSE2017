@@ -54,6 +54,7 @@
 
 \usepackage{url}
 \usepackage{multirow}
+\usepackage{csquotes}
 
 
 
@@ -64,7 +65,7 @@
 % V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
 % \cite{} output to follow that of the IEEE. Loading the cite package will
 % result in citation numbers being automatically sorted and properly
-% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% \enquote{compressed/ranged}. e.g., [1], [9], [2], [7], [5], [6] without using
 % cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
 % \cite will automatically add leading space, if needed. Use cite.sty's
 % noadjust option (cite.sty V3.8 and later) if you want to turn this off
@@ -115,7 +116,7 @@
 % in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
 % that all non-photo figures use a vector format (.eps, .pdf, .mps) and
 % not a bitmapped formats (.jpeg, .png). The IEEE frowns on bitmapped formats
-% which can result in "jaggedy"/blurry rendering of lines and letters as
+% which can result in \enquote{jaggedy}/blurry rendering of lines and letters as
 % well as large increases in file sizes.
 %
 % You can find documentation about the pdfTeX application at:
@@ -196,7 +197,7 @@
 % subfig.sty requires and automatically loads Axel Sommerfeldt's caption.sty
 % which will override IEEEtran.cls' handling of captions and this will result
 % in non-IEEE style figure/table captions. To prevent this problem, be sure
-% and invoke subfig.sty's "caption=false" package option (available since
+% and invoke subfig.sty's \enquote{caption=false} package option (available since
 % subfig.sty version 1.3, 2005/06/28) as this is will preserve IEEEtran.cls
 % handling of captions.
 % Note that the Computer Society format requires a larger sans serif font
@@ -231,7 +232,7 @@
 %\usepackage{stfloats}
 % stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
 % the ability to do double column floats at the bottom of the page as well
-% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
+% as the top. (e.g., \enquote{\begin{figure*}[!b]} is not normally possible in
 % LaTeX2e). It also provides a command:
 %\fnbelowfloat
 % to enable the placement of footnotes below bottom floats (the standard
@@ -417,7 +418,7 @@ As more and more Thais own mobile devices, mobile applications are high in deman
 % adjust value as needed - may need to be readjusted if
 % the document is modified later
 %\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
+% The \enquote{triggered} command can be changed if desired:
 %\IEEEtriggercmd{\enlargethispage{-5in}}
 
 % references section
@@ -441,45 +442,45 @@ As more and more Thais own mobile devices, mobile applications are high in deman
 %%	H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 %%	0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
 %	\bibitem{SentiWordNet}
-%	S.~Baccianella and et al., "SentiWordNet 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining," \emph{LREC.}, vol. 10, 2010, pp. 2200-2204.
+%	S.~Baccianella and et al., \enquote{SentiWordNet 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining,} \emph{LREC.}, vol. 10, 2010, pp. 2200-2204.
 %	
-%	\bibitem{145Q} A.~Begel and T.~Zimmermann, "Analyze This! 145 Questions for Data Scientists in Software Engineering," in \emph{Proceeding of the 36th International Conference on Software Engineering}, ACM, 2014, pp. 12-23.
+%	\bibitem{145Q} A.~Begel and T.~Zimmermann, \enquote{Analyze This! 145 Questions for Data Scientists in Software Engineering,} in \emph{Proceeding of the 36th International Conference on Software Engineering}, ACM, 2014, pp. 12-23.
 %	
-%	\bibitem{LDA} D.~M. Blei and M.~I. Jordan, "Latent dirichlet allocation," \emph{Journal of machine Learning reserch}, vol. 3, 2003, pp.993-1022.
+%	\bibitem{LDA} D.~M. Blei and M.~I. Jordan, \enquote{Latent dirichlet allocation,} \emph{Journal of machine Learning reserch}, vol. 3, 2003, pp.993-1022.
 %	
 %	\bibitem{featurethaiwordseg}
-%	P.~Charoenpornsawat, "Feature-Based Thai Word Segmentation," M.S. thesis, Dept. Comp. Eng., Chulalongkorn Univ., Bangkok, Thailand, 1999.
+%	P.~Charoenpornsawat, \enquote{Feature-Based Thai Word Segmentation,} M.S. thesis, Dept. Comp. Eng., Chulalongkorn Univ., Bangkok, Thailand, 1999.
 %	
 %	\bibitem{ar-miner}
-%	N.~Chen and et al., "Ar-Miner: Mining Informative Reviews for Developers from Mobile App Marketplace," in \emph{Proceedings of the 36th International Conference on Software Engineering}, ACM, 2014, Hyderabad, India, pp. 767-778.
+%	N.~Chen and et al., \enquote{Ar-Miner: Mining Informative Reviews for Developers from Mobile App Marketplace,} in \emph{Proceedings of the 36th International Conference on Software Engineering}, ACM, 2014, Hyderabad, India, pp. 767-778.
 %	
 %	\bibitem{basicemotion}
-%	P.~Ekman, "An Argument for Basic Emotions," \emph{An Argument for Basic Emotions}, vol. 6, no. 3-4, 1992, pp. 169-200.
+%	P.~Ekman, \enquote{An Argument for Basic Emotions,} \emph{An Argument for Basic Emotions}, vol. 6, no. 3-4, 1992, pp. 169-200.
 %	
 %	\bibitem{userslikefeature}
-%	E.~Guzman and W.~Maalej, "How Do Users Like This Feature? A Fine Grained Sentiment Analysis of App Reviews," in \emph{Proceedings of the 22nd International Conference on Requirements Engineering (RE)}, IEEE, 2014,pp. 153-162.
+%	E.~Guzman and W.~Maalej, \enquote{How Do Users Like This Feature? A Fine Grained Sentiment Analysis of App Reviews,} in \emph{Proceedings of the 22nd International Conference on Requirements Engineering (RE)}, IEEE, 2014,pp. 153-162.
 %	
 %	\bibitem{thaiopinionmininghotel}
-%	C.~Haruechaiyasak and A.~Kongthon, "Contructing Thai Opinion Mining Resource : A Case Study on Hotel Reviews," in \emph{Proceedings of the 8th Workshop on Asian Language Resources}, 2010, pp. 64-71. 
+%	C.~Haruechaiyasak and A.~Kongthon, \enquote{Contructing Thai Opinion Mining Resource : A Case Study on Hotel Reviews,} in \emph{Proceedings of the 8th Workshop on Asian Language Resources}, 2010, pp. 64-71. 
 %	
 %	\bibitem{ssense}
-%	C.~Haruechaiyasak and A.~Kongthon, "S-Sense : A Sentiment Analysis Framework for Social Media Sensing," in \emph{6th International Joint Conference on Natural Language Processing}, 2013, pp. 6-13.
+%	C.~Haruechaiyasak and A.~Kongthon, \enquote{S-Sense : A Sentiment Analysis Framework for Social Media Sensing,} in \emph{6th International Joint Conference on Natural Language Processing}, 2013, pp. 6-13.
 %	
 %	\bibitem{emotioninthai}
-%	P.~Inrak and S.~Sinthupinyo, "Applying Latent Senmantic Analysis to Classify Emotions in Thai Text," in \emph{Proceedings of the 2nd International Conference on Computer Engineering and Technology (ICCET)}, IEEE, vol. 6, 2010, pp. 450-454.
+%	P.~Inrak and S.~Sinthupinyo, \enquote{Applying Latent Senmantic Analysis to Classify Emotions in Thai Text,} in \emph{Proceedings of the 2nd International Conference on Computer Engineering and Technology (ICCET)}, IEEE, vol. 6, 2010, pp. 450-454.
 %	
 %	% รอจัด format
 %	\bibitem{paragraphextract}
-%	C.~Jaruskulchai and C.~Kruengkrai, "A Practical Text Summarizer by Paragraph Extraction for Thai," in \emph{Proceedings of the 6th international workshop on Information retrieval with Asian language}, 2003, pp. 9-16.
+%	C.~Jaruskulchai and C.~Kruengkrai, \enquote{A Practical Text Summarizer by Paragraph Extraction for Thai,} in \emph{Proceedings of the 6th international workshop on Information retrieval with Asian language}, 2003, pp. 9-16.
 %	
 %	\bibitem{asum}
-%	Y.~Jo and A.~H. Oh., "Aspect and Sentiment Unification Model for Online Review Analysis,", in \emph{Proceedings of the 4th ACM international conference on Web search and data mining}, ACM, Hong Kong, China, 2011, pp. 815-824.
+%	Y.~Jo and A.~H. Oh., \enquote{Aspect and Sentiment Unification Model for Online Review Analysis,}, in \emph{Proceedings of the 4th ACM international conference on Web search and data mining}, ACM, Hong Kong, China, 2011, pp. 815-824.
 %	
 %	\bibitem{thaiwordfilter}
-%	A.~Kawtrakul, and et al., "A Statistical Approach to Thai Word Filtering," in \emph{The 2nd symposium on natural language processing}, Bangkok, 1997.
+%	A.~Kawtrakul, and et al., \enquote{A Statistical Approach to Thai Word Filtering,} in \emph{The 2nd symposium on natural language processing}, Bangkok, 1997.
 %	
 %	\bibitem{surveyopinionmining}
-%	B.~Liu, "A Survey of Opinion Mining and Sentiment Analysis," \emph{Mining Text Data}, Springer, 2012, pp. 415-463. 
+%	B.~Liu, \enquote{A Survey of Opinion Mining and Sentiment Analysis,} \emph{Mining Text Data}, Springer, 2012, pp. 415-463. 
 %	
 %	\bibitem{cosine similarity}
 %	C.~D. Manning, and et al. (2015, July 27) An Introduction to Information Retrieval, [Online]. Available: http://nlp.stanford.edu/IR-book/pdf/irbookonlinereading.pdf
@@ -491,31 +492,31 @@ As more and more Thais own mobile devices, mobile applications are high in deman
 %	National Electronics and Computer Technology Center. (2015, July 27) Lexitron, [Online]. Available: http://lexitron.nectec.or.th/2009\_1 
 %	
 %	\bibitem{RDRPOSTagger}
-%	D.~Q. Nguyen and et al. "RDRPOSTagger: A Ripple Down Rules-based Part-Of-Speech Tagger," in \emph{Proceedings of the Demonstrations at the 14th Conference of European Chapter of the Association for Computational Linguistics}, 2014, Gothenburg, Sweden, pp. 17-20.
+%	D.~Q. Nguyen and et al. \enquote{RDRPOSTagger: A Ripple Down Rules-based Part-Of-Speech Tagger,} in \emph{Proceedings of the Demonstrations at the 14th Conference of European Chapter of the Association for Computational Linguistics}, 2014, Gothenburg, Sweden, pp. 17-20.
 %	
 %	\bibitem{EMNB}
-%	K.~Nigam and et al., "Text Classification from Labeled and Unlabeled Documents Using EM," \emph{Machine Learning}, vol. 39, no. 2-3, 2000, pp. 103-134.
+%	K.~Nigam and et al., \enquote{Text Classification from Labeled and Unlabeled Documents Using EM,} \emph{Machine Learning}, vol. 39, no. 2-3, 2000, pp. 103-134.
 %	
 %	\bibitem{NLTK}
 %	NLTK Project. (2015, July 27) Natural Language Toolkit, [Online]. Available: http://www.nltk.org
 %	
 %	\bibitem{syllableseparator}
-%	Y.~Poovarawan and W.~Imarrom, "Thai Syllable Separator by Dictionary," in \emph{Proceedings of the 9th Annual Meeting on Electrical Engineering of the Thai Universities}, Khonkaen, Thailand, 1986, pp. 14.
+%	Y.~Poovarawan and W.~Imarrom, \enquote{Thai Syllable Separator by Dictionary,} in \emph{Proceedings of the 9th Annual Meeting on Electrical Engineering of the Thai Universities}, Khonkaen, Thailand, 1986, pp. 14.
 %	
 %	\bibitem{wordsegforthai}
-%	V.~Sornlertlamvanich, "Word Segmentation for Thai in Machine Translation System," in \emph{Machine Translation}, NECTEC, Bangkok, Thailand, 1993, pp. 50-56.
+%	V.~Sornlertlamvanich, \enquote{Word Segmentation for Thai in Machine Translation System,} in \emph{Machine Translation}, NECTEC, Bangkok, Thailand, 1993, pp. 50-56.
 %	
 %	\bibitem{ORCHID}
-%	V.~Sornlertlamvanich and et al. "ORCHID: Thai Part-of-Speech Tagged Corpus," \emph{National Eletronics and Computer Technology Center Technical Report}, pp. 5-19, 1997.
+%	V.~Sornlertlamvanich and et al. \enquote{ORCHID: Thai Part-of-Speech Tagged Corpus,} \emph{National Eletronics and Computer Technology Center Technical Report}, pp. 5-19, 1997.
 %	
 %	\bibitem{SentiStrength}
-%	M.~Thelwall and et al., "Sentiment in Short Strength Detection Informal Text," \emph{Journal of the American Society for Information Science and Technology}, vol. 61, no. 12, 2010, pp. 2544-2558. 
+%	M.~Thelwall and et al., \enquote{Sentiment in Short Strength Detection Informal Text,} \emph{Journal of the American Society for Information Science and Technology}, vol. 61, no. 12, 2010, pp. 2544-2558. 
 %	
 %	\bibitem{NAiST}
-%	P.~Varasai and et al., "Building an Annotated Corpus for Text Summarization and Question Answering," in \emph{Proceedings of the International Conference on Language Resoureces and Evaluation}, Marakech, Morocco, 2008, pp. 3427-3434.
+%	P.~Varasai and et al., \enquote{Building an Annotated Corpus for Text Summarization and Question Answering,} in \emph{Proceedings of the International Conference on Language Resoureces and Evaluation}, Marakech, Morocco, 2008, pp. 3427-3434.
 %	
 %	\bibitem{keywordmining}
-%	P.~M. Vu and et al., "Mining User Opinions in Mobile App Reviews: A Keyword-Based Approach," in \emph{Automated Software Engineering (ASE)}, IEEE, 2015, pp. 749-759.
+%	P.~M. Vu and et al., \enquote{Mining User Opinions in Mobile App Reviews: A Keyword-Based Approach,} in \emph{Automated Software Engineering (ASE)}, IEEE, 2015, pp. 749-759.
 %	
 %\end{thebibliography}
 
