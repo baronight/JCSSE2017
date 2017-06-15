@@ -4,16 +4,16 @@ Processing Thai texts to extract opinions and sentiments requires word segmentat
 
 Processing English text is easier than processing Thai text since English words in a sentence have spaces between them and therefore can be easily distinguished using a space as a delimiter. However, Thai text is written continuously without spaces and difficult to find word boundaries. Therefore, there is a need for word segmentation when processing Thai text.
 
-There are several word segmentation techniques such as Longest Matching\cite{syllableseparator}, Maximal Matching\cite{wordsegforthai}, Probabilistic Model\cite{thaiwordfilter}, and Feature-based Approach\cite{featurethaiwordseg}. The word segmentation tool used in this paper is LexTo\cite{LexTo} developed by National Electronics and Computer Technology Center (NECTEC) employs the Longest Matching technique. 
+There are several word segmentation techniques such as Longest Matching\cite{syllableseparator}, Maximal Matching\cite{wordsegforthai}, Probabilistic Model\cite{thaiwordfilter}, and Feature-based Approach\cite{featurethaiwordseg}. The word segmentation tool used in this paper is LexTo\cite{LexTo} developed by National Electronics and Computer Technology Center (NECTEC) which employs the Longest Matching technique. 
 
 The Longest Matching technique attempts to match an entire string of Thai text with words contained in a given lexicon. If no word in the lexicon can be matched with the string, the last character of the string is removed. The technique then attempts to match the truncated string with the lexicon again. The matching and truncating are repeated until a word is found in the lexicon. The word is then removed from the text, 
-and the entire process is itereated for the rest of the text.
+and the entire process is iterated for the rest of the text.
 
 \subsection{Part of Speech}
 
 In addition to word segmentation, we also need to tag each word a part of speech to identify whether this word is a (1) noun, (2) pronoun, (3) verb, (4) adverb, (5) adjective, (6) preposition, (7) conjunction, and (8) interjection. The categorization of parts of speech can vary depending on how precisely one wants to tag.
 
-Part-of-speech tagging is a common step in natural language processing. There are several tools that can help tag parts of speech such as Nature Language ToolKit (NLTK)\cite{NLTK} and RDRPOStagger\cite{RDRPOSTagger}. These tools need a corpus to learn parts of speech before being able to tag. NLTK has an English corpus and also allows any corpora from any languages to be added. RDRPOStagger has various corpora from seven languages including Thai. The Thai corpus in RDRPOStagger is the ORCHID\cite{ORCHID} corpus developed by NECTEC. This paper uses the RDRPOStagger tool.
+Part-of-speech tagging is a common step in natural language processing. There are several tools that can help tag parts of speech such as Natural Language Toolkit (NLTK)\cite{NLTK} and RDRPOStagger\cite{RDRPOSTagger}. These tools need a corpus to learn parts of speech before being able to tag. NLTK has an English corpus and also allows any corpora from any languages to be added. RDRPOStagger has various corpora from seven languages including Thai. The Thai corpus in RDRPOStagger is the ORCHID\cite{ORCHID} corpus developed by NECTEC. This paper uses the RDRPOStagger tool.
 
 %NAiST\cite{NAiST} corpus developed by Department of Computer Engineering, Kasetsart University 
 
@@ -22,11 +22,11 @@ Part-of-speech tagging is a common step in natural language processing. There ar
 
 Opinion mining and sentiment analysis is a process that attempts to extract opinions and sentiments from given text\cite{surveyopinionmining}. For example, given user reviews of a product, one might want to know their opinions and feelings toward the product. In addition, one might want to know more in details which aspects or topics of the product users have opinions on. Topic modeling is a technique that helps discover underlying topics within given text. Latent Dirichlet Allocation (LDA)\cite{LDA} is a common and effective topic modeling technique. LDA is based on a Bayesian model with the assumption that a given text contains a mixture of topics, and each topic contains various words with different probabilities.
 
-There are various topic modeling tools. Our work uses gensim\cite{gensim}, which is a Python library requiring dependencies of the SciPy and NumPy libraries.
+There are various topic modeling tools. Our work uses gensim\cite{gensim}, which is a Python library requiring dependencies of SciPy and NumPy libraries.
 
 \subsection{Sentiment Analysis}
 
-When extracting opinions about products, one also wants to know sentiments whether user opinions are positive, negative, or neutral. Two main approaches for sentiment analysis are machine learning based and lexicon-based. The machine-learning based approach learns and builds classifiers from texts labeled with sentiments. The classifiers are then used to classifiy sentiments. In the lexicon-based approach, each word has a sentiment score, and sentiments of given text is calculated from scores of words appearing in the text. SentiStrength \cite{SentiStrength} and SentiWordNet~\cite{SentiWordNet} provide lexical resources where English words are annotated with sentiment scores. Our work uses SentiWordNet as a sentiment lexical resource.
+When extracting opinions about products, one also wants to know sentiments whether user opinions are positive, negative, or neutral. Two main approaches for sentiment analysis are learning-based and lexicon-based. The learning-based approach learns and builds classifiers from texts labeled with sentiments. The classifiers are then used to classify sentiments. In the lexicon-based approach, each word has a sentiment score, and sentiments of given text is calculated from scores of words appearing in the text. SentiWordNet~\cite{SentiWordNet} provides such a lexical resource where English words are annotated with sentiment scores. 
 
 
 

@@ -1,6 +1,5 @@
-Table~\ref{table:topicManMan} displays aspects and sentiments after analyzing user reviews using our approach. Due to space limit, the table only shows results from \enquote{Man Man} application. In the table, the number of positive and negative sentences are also shown to give developers a sense of how often aspects were mentioned in user reviews. Figure~\ref{fig:graphmanman} visualizes the results from Table~\ref{table:topicManMan} with a graph and sorts aspects by sentiment scores. 
+Table~\ref{table:topicManMan} displays aspects and sentiments after analyzing user reviews using our approach. Due to space limit, the table only shows results from \enquote{Man Man} application. The first column displays topics/aspects resulting from LDA where the +/- signs are labeled manually to use as truth values. The second column displays sentiment scores calculated by our approach. The number of positive and negative sentences are also shown in the third and forth columns to give developers a sense of how often aspects were mentioned in user reviews. Figure~\ref{fig:graphmanman} visualizes the results from Table~\ref{table:topicManMan} with a graph and sorts aspects by sentiment scores. 
 
-The sentiment scores shown in Table~\ref{table:topicManMan} has the highest positive and negative scores of 0.5153 and -0.5156, respectively. Upon examining SentiWordNet, we find that highest \textit{Pos} and \textit{Neg} scores are both 0.75 since the \textit{Obj} score is always non-zero. Since we use averages and absolute maximums when assigning scores to words and sentences, resulting sentiment scores for aspects should be in the range of [-0.75,0.75]. Thus, we can categorize the resulting scores to \textit{low}, \textit{medium}, \textit{high} when absolute scores are [0,0.25), [0.25, 0.5), [0.5,0.75], respectively. Hence, the sentiment score of 0.5153 and -0.5156 in Table~\ref{table:topicManMan} can be considered high positive and high negative. 
 
 \begin{table}[h]
 	\caption{20 topics/aspects discovered from Man Man user reviews}
@@ -11,94 +10,95 @@ The sentiment scores shown in Table~\ref{table:topicManMan} has the highest posi
 		}
 		\hline
 		\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Topic/Aspect}}}
-		& \multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Sentiment}}}
-		& \multicolumn{2}{|c|}{\textbf{Sentences}}
+%		& \multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Sentiment}}}
+		& \multicolumn{1}{|c|}{\textbf{Senti-}}
+		& \multicolumn{2}{|c|}{\textbf{\# Sentences}}
 %		& \multicolumn{1}{|c|}{\textbf{\# Neg. Sentences}}
 		\\
 		\cline{3-4}
 		\multicolumn{1}{|c|}{}
-		& \multicolumn{1}{|c|}{}
-		& \multicolumn{1}{|c|}{\textbf{\# Pos.}}
-		& \multicolumn{1}{|c|}{\textbf{\# Neg.}}
+		& \multicolumn{1}{|c|}{\textbf{ment}}
+		& \multicolumn{1}{|c|}{\textbf{Pos.}}
+		& \multicolumn{1}{|c|}{\textbf{Neg.}}
 		\\
 		\hline
-		{- {\selectlanguage{thai}เปลี่ยน ภาษา} <change language>} & 0.2770 
+		{- {\selectlanguage{thai}เปลี่ยน ภาษา} <change, language>} & 0.2770 
 		& 35 & 9 
 		\\
 		\hline
-		{+ {\selectlanguage{thai}พัฒนา ยอด} <develop great>} & 0.2666 
+		{+ {\selectlanguage{thai}พัฒนา ยอด} <develop, great>} & 0.2666 
 		& 47 & 6 
 		\\
 		\hline
-		{- sticker {\selectlanguage{thai}หน่อย ขยาย} <sticker slightly expand>} & 0.2046 
+		{- {\selectlanguage{thai}sticker หน่อย ขยาย} <sticker, slightly, expand>} & 0.2046 
 		& 36 & 15 
 		\\
 		\hline
-		{+ {\selectlanguage{thai}สะดวก สวย} <bueaty comfort>} & 0.3926 
+		{+ {\selectlanguage{thai}สะดวก สวย} <convenient, beautiful>} & 0.3926 
 		& 84 & 13 
 		\\
 		\hline
-		{+ {\selectlanguage{thai}สายตา ขนาด ใหญ่} <sight size big>} & 0.5153 
+		{+ {\selectlanguage{thai}สายตา ขนาด ใหญ่} <sight, size, big>} & 0.5153 
 		& 143 & 26 
 		\\
 		\hline
-		{- {\selectlanguage{thai}ยกเว้น ทำนาย} <except predict>} & 0.2315 
+		{- {\selectlanguage{thai}ยกเว้น ทำนาย} <except, predict>} & 0.2315 
 		& 19 & 2 
 		\\
 		\hline
-		{- {\selectlanguage{thai}ปรับปรุง ยาก} <update hard>} & 0.2035
+		{- {\selectlanguage{thai}ปรับปรุง ยาก} <update, difficult>} & 0.2035
 		 & 17 & 11 
 		 \\
 		\hline
-		{- {\selectlanguage{thai}ปุ่ม หาย} <button missing>} & -0.5156 
+		{- {\selectlanguage{thai}ปุ่ม หาย} <button, missing>} & -0.5156 
 		& 49 & 23 
 		\\
 		\hline
-		{+ {\selectlanguage{thai}ชอบ แม่น} <like accurate>} & 0.3926 
+		{+ {\selectlanguage{thai}ชอบ แม่น} <like, accurate>} & 0.3926 
 		& 142 & 14 
 		\\
 		\hline
-		{+ {\selectlanguage{thai}สุดยอด ลอง} <topmost try>} & 0.3926 
+		{+ {\selectlanguage{thai}สุดยอด ลอง} <topmost, try>} & 0.3926 
 		& 145 & 12 
 		\\
 		\hline
-		{- {\selectlanguage{thai}แป้น รวน} <keyborad error>} & -0.3352 
+		{- {\selectlanguage{thai}แป้น รวน} <keyboard, error>} & -0.3352 
 		& 24 & 9 
 		\\
 		\hline
-		{- {\selectlanguage{thai}แก้ไข สี} <correct color>} & 0.2167 
+		{- {\selectlanguage{thai}แก้ไข สี} <correct, color>} & 0.2167 
 		& 40 & 15 
 		\\
 		\hline
-		{+ {\selectlanguage{thai}พิมพ์ ง่าย} <type easy>} & 0.5153 
+		{+ {\selectlanguage{thai}พิมพ์ ง่าย} <type, easy>} & 0.5153 
 		& 201 & 12 
 		\\
 		\hline
-		{- {\selectlanguage{thai}เสียง เสียดาย} <sound deplore>} & 0.4066
+		{- {\selectlanguage{thai}เสียง เสียดาย} <sound, deplore>} & 0.4066
 		 & 17 & 4 
 		 \\
 		\hline
-		{- {\selectlanguage{thai}ปรับ ขนาด ค้าง} <adjust size stuck>} & 0.5153 
+		{- {\selectlanguage{thai}ปรับ ขนาด ค้าง} <adjust, size, stuck>} & 0.5153 
 		& 63 & 13 
 		\\
 		\hline
-		{+ {\selectlanguage{thai}ปุ่ม แจ่ม ซับซ้อน} <button bright complicate>} & -0.5156 
+		{+ {\selectlanguage{thai}ปุ่ม แจ่ม ซับซ้อน} <button, bright, complicate>} & -0.5156 
 		& 30 & 17 
 		\\
 		\hline
-		{- {\selectlanguage{thai}เพิ่ม อิโมจิ} <add emoji>} & 0.4066 
+		{- {\selectlanguage{thai}เพิ่ม อิโมจิ} <add, emoji>} & 0.4066 
 		& 35 & 1 
 		\\
 		\hline
-		{- {\selectlanguage{thai}เดา คำ} <guess word>} & -0.5156 
+		{- {\selectlanguage{thai}เดา คำ} <guess, word>} & -0.5156 
 		& 44 & 9 
 		\\
 		\hline
-		{+ {\selectlanguage{thai}พิมพ์ พลาด} <type miss>} & 0.5153 
+		{+ {\selectlanguage{thai}พิมพ์ พลาด} <type, miss>} & 0.5153 
 		& 68 & 11 
 		\\
 		\hline
-		{+ {\selectlanguage{thai}แป้น ใหญ่} <keyboard big>} & 0.3396 
+		{+ {\selectlanguage{thai}แป้น ใหญ่} <keyboard, big>} & 0.3396 
 		& 82 & 13 
 		\\
 		\hline
@@ -172,14 +172,21 @@ The sentiment scores shown in Table~\ref{table:topicManMan} has the highest posi
 
 %We evaluated our approach by asking one person not related our research to manually label sentiments whether a sentence is positive, negative, or neutral. This information is used as truth values to calculate precision, recall, and accuracy. Table~\ref{table:f-measureSenti} shows evaluation results of sentiment analysis on a sentence level.
 
-We evaluated our approach by calculating precision, recall, F-measure, and accuracy using truth values from data labeled manually by one person not related to our research. To manually label data, the person was given aspects/topics generated from LDA in the topic modeling step and then labeled each aspect/topic with either positive or negative sentiment. Sentiment scores are not evaluated since it is highly subjective and can be difficult to analyze accuracy. Table~\ref{table:f-measureTopic} shows the evaluation results. The average F-measure from both applications is 0.6071. 
+Please note that some seemingly negative aspects such as 
+\enquote{{\selectlanguage{thai}พิมพ์ พลาด}} (type, miss) are labeled as positive since reviews with the word \enquote{{\selectlanguage{thai}พลาด}} (miss) which has a negative sentiment usually have the word \enquote{{\selectlanguage{thai}ไม่}} (not) preceding it causing its sentiment to reverse. When examining reviews in this aspect, most users state that they do not miss a letter when typing using the keyboard application. These reviews sound positive. 
 
-We have not evaluated whether the LDA produced accurate topics/aspects. For topic modeling, accuracy evaluation is very subjective and time-consuming. Different persons may have very different points of view on how to identify topics/aspects in large amount of data.  Since the LDA technique is widely known and used for topic modeling, we assume for now that results from LDA is acceptably accurate. Future work can be done to evaluate this step using similar human-intensive process as in Gunzmam and Laalej's work~\cite{userslikefeature}.
 
-\subsection*{Limitation and Possible Future Works}
-Our work still has some limitations such as limitations in word segmentations of informal texts, slangs, and misspelled words. This causes LEXiTRON and SentiWordNet not being able to find translations nor sentiment scores. Moreover, some words have several meanings, and LEXiTRON returns several translations. Thus, we do not get precise meanings nor precise sentiment scores. Possible future work is to create a Thai sentiment lexical resource to help Thai researchers perform sentiment analysis easier and more accurate.
+The sentiment scores shown in Table~\ref{table:topicManMan} have the highest positive and negative scores of 0.5153 and -0.5156, respectively. Upon examining SentiWordNet, we find that highest \textit{Pos} and \textit{Neg} scores are both 0.75 since the \textit{Obj} score is always non-zero. Because we use averages and absolute maximums when assigning scores to words and sentences, resulting sentiment scores for aspects should be in the range of [-0.75,0.75]. Thus, we can categorize the resulting scores to \textit{low}, \textit{medium}, \textit{high} when absolute scores are [0,0.25), [0.25, 0.5), [0.5,0.75], respectively. Hence, the sentiment score of 0.5153 and -0.5156 in Table~\ref{table:topicManMan} can be considered high positive and high negative. 
 
-For topic modeling, our work fixes a number of topics and therefore are not flexible or dynamic enough. For future work, we can allow the number to be configurable or determined dynamically from additional information extracted from applications such as a list of features or application size.
+We evaluated our approach by calculating precision, recall, F-measure, and accuracy shown in Table~\ref{table:f-measureTopic} using truth values from data labeled manually by one person not related to our research. To manually label data, the person was given aspects/topics generated from LDA and then labeled each aspect/topic with either positive or negative sentiment. Sentiment scores are not evaluated since it is highly subjective and can be difficult to analyze accuracy. 
+%The average F-measure from both applications is 0.6071. 
+
+We have not evaluated whether the LDA produced accurate topics/aspects. For topic modeling, accuracy evaluation is very subjective and time-consuming. Different persons may have very different points of view on how to identify topics/aspects in large amount of data.  Since the LDA technique is widely known and used for topic modeling, we assume for now that results from LDA are acceptably accurate. Future work can be done to evaluate this step using similar human-intensive process as in Gunzmam and Laalej's work~\cite{userslikefeature}.
+
+\subsection*{Limitations and Possible Future Works}
+Our work still has some limitations such as limitations in word segmentation of informal texts, slangs, and misspelled words. This causes LEXiTRON and SentiWordNet not being able to find translations nor sentiment scores. Moreover, some words have several meanings, and LEXiTRON returns several translations. Thus, we do not get precise meanings nor precise sentiment scores. Possible future work is to create a Thai sentiment lexical resource to help Thai researchers perform sentiment analysis easier and more accurate.
+
+For topic modeling, our work fixes a number of topics and therefore is not flexible nor dynamic enough. For future work, we can allow the number to be configurable or determined dynamically from additional information extracted from applications such as a list of features or application size.
 
 The evaluation process is still not ideal since only one person creates truth values. We will ask more persons to label data as our future work. More mobile applications can also be analyzed to expand our case studies. We can also make the approach into a tool where users specify a name of a mobile application and let the tool analyze and display results.
 
